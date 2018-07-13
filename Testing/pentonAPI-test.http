@@ -1,0 +1,76 @@
+@host =pricedigestsapi.com
+@Content-Type = application/json
+@version = v1
+@apiKey = 1234567890
+@configurationId = 904828
+@vin = 3GNAL2EK9CS592441
+@make = KENWORTH
+@model = W900
+@year = 2012
+
+@sizeClassID = 569
+##https://docs.pricedigestsapi.com
+
+
+### Get specs using configID
+GET https://{{host}}/{{version}}/verification/vin/{{vin}}
+x-api-key:{{apiKey}}
+Content-Type: {{Content-Type}}
+
+
+### Get specs using configID
+GET https://{{host}}/{{version}}/specs/basic?configurationId={{configurationId}}
+x-api-key:{{apiKey}}
+Content-Type: {{Content-Type}}
+
+
+### Get values using configID
+GET https://{{host}}/{{version}}/values/value?configurationId={{configurationId}}
+x-api-key:{{apiKey}}
+Content-Type: {{Content-Type}}
+
+
+### Get manufacturers by year
+GET https://pricedigestsapi.com/v1/taxonomy/manufacturers/?year={{year}}
+x-api-key:{{apiKey}}
+Content-Type: {{Content-Type}}
+
+
+### Get models by manufacturer and year
+GET https://pricedigestsapi.com/v1/taxonomy/models/?manufacturer={{make}}&year={{year}}
+x-api-key:{{apiKey}}
+Content-Type: {{Content-Type}}
+
+
+### Get specs by year and manufacturer
+GET https://{{host}}/{{version}}/specs/basic?year={{year}}&manufacturer={{make}}
+x-api-key:{{apiKey}}
+Content-Type: {{Content-Type}}
+
+
+### Get configs by year, make, model
+GET https://{{host}}/{{version}}/taxonomy/configurations?year={{year}}&manufacturer={{make}}&model={{model}}
+x-api-key:{{apiKey}}
+Content-Type: {{Content-Type}}
+
+
+### Get options by year and sizeClassID
+GET https://{{host}}/{{version}}/values/options?sizeClassId={{sizeClassID}}&year={{year}}
+x-api-key:{{apiKey}}
+Content-Type: {{Content-Type}}
+
+
+### Get configs by sizeClass and configurationID
+GET https://{{host}}/{{version}}/taxonomy/configurations?configurationId={{configurationId}}&sizeClassId={{sizeClassID}}
+x-api-key:{{apiKey}}
+Content-Type: {{Content-Type}}
+
+### Get configs by sizeClass and configurationID
+GET https://{{host}}/{{version}}/taxonomy/manufacturers/?offset=50
+x-api-key:{{apiKey}}
+Content-Type: {{Content-Type}}
+
+### Get configs by sizeClass and configurationID
+GET https://pricedigestsapi.com/v1/taxonomy/models/?year=asddwq
+x-api-key:{{apiKey}}
+Content-Type: {{Content-Type}}
