@@ -125,12 +125,12 @@ component displayName="Barretts Utils" hint="Some useful functions I've made at 
 */
 
 /* Create config object for injection
-    config = createobject('component','goodville.config');
-    config.init(xmlparse(expandpath('/environment/agentssite.xml')));
+    config = createobject('component','<>.config');
+    config.init(xmlparse(expandpath('/<>/<>.xml')));
 */
 
 /* Component init -> dependency inject config file
-    public function init(required goodville.config config){
+    public function init(required <>.config config){
         //setup things in variables scope if needed...
         return this;
     }
