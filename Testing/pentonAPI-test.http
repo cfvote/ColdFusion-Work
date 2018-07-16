@@ -1,7 +1,9 @@
+# Using REST Client Visual Studio Code Extension to make easy HTTP Requests
+
 @host =pricedigestsapi.com
 @Content-Type = application/json
 @version = v1
-@apiKey = 1234567890
+@apiKey = <apikey>
 @configurationId = 904828
 @vin = 3GNAL2EK9CS592441
 @make = KENWORTH
