@@ -21,9 +21,9 @@ GOTO:UPDATE_SOURCE
     @ECHO ON
     svn update %SOURCE_PATH%/cfmx
     svn update %SOURCE_PATH%/java
-    XCOPY /sy %SOURCE_PATH%\java\BuiltJARS\jars %CF_INSTALL%\lib\
+    XCOPY /e /i /y /s %SOURCE_PATH%\java\BuiltJARS\jars %CF_INSTALL%\lib\
     XCOPY /y %SOURCE_PATH%\java\BuiltJARS\build\properties\*.jar %CF_INSTALL%\lib\
-    XCOPY /y %SOURCE_PATH%\java\JARS\CFDependencies %CF_INSTALL%\lib\
+    XCOPY /e /i /y /s %SOURCE_PATH%\java\JARS\CFDependencies %CF_INSTALL%\lib\
     @ECHO OFF
     GOTO:FINISH
 
