@@ -10,6 +10,9 @@ component
             'c:\source\cfmx\wwwroot\test\index.cfm',
             'c:\source\cfmx\wwwroot\agents\business\quote\ac\display.cfc'
         ],
+        excludeContaining: [
+            '_combined'
+        ]
         showHtml: true
     }*/
 
@@ -22,21 +25,32 @@ component
     public any function scan(required struct options){
         local.scanResults = arrayNew(1);
         local.dirList = arrayNew(1);
-
+        local.extensions = "";
         if(!arguments.options.outPath.find('.txt')){
             arguments.options.outPath = arguments.options.outPath & '.txt';
         }
+        switch(uCase(arguments.options.scanType)){
+            case 'CF':  case 'COLDFUSION':  local.extensions = "*.cfm|*.cfc";   break;
+            case 'JS':  case 'JAVASCRIPT':  local.extensions = "*.js";          break;
+            default:    return;
+        }
         for(local.x = 1; local.x <= ArrayLen(arguments.options.scanTarget); local.x++){
-            if(arguments.options.scanType == 'ColdFusion'){
-                local.fileInfo = getFileInfo(arguments.options.scanTarget[local.x]);
-                if(local.fileInfo.type EQ 'directory'){
-                    local.dirList = directoryList(arguments.options.scanTarget[local.x], true, "path", "*.cfm|*.cfc");
-                } else if(local.fileInfo.type EQ 'file'){
-                    local.dirList.append(arguments.options.scanTarget[local.x]);
+            local.fileInfo = getFileInfo(arguments.options.scanTarget[local.x]);
+            if(local.fileInfo.type EQ 'directory'){
+                local.dirList = directoryList(arguments.options.scanTarget[local.x], true, "path", local.extensions);
+            } else if(local.fileInfo.type EQ 'file'){
+                local.dirList.append(arguments.options.scanTarget[local.x]);
+            } else{
+                return;
+            }
+            for(local.i = 1; local.i <= arrayLen(local.dirList); local.i++){
+                if(arrayLen(arguments.options.excludeContaining) > 0){
+                    for(local.j = 1; local.j <= arrayLen(arguments.options.excludeContaining); local.j++){
+                        if(!find(arguments.options.excludeContaining[local.j], local.dirList[local.i])){
+                            local.scanResults.append(scanFile(local.dirList[i], arguments.options.showHtml));
+                        }
+                    }
                 } else{
-                    return;
-                }
-                for(local.i = 1; local.i <= arrayLen(local.dirList); local.i++){
                     local.scanResults.append(scanFile(local.dirList[i], arguments.options.showHtml));
                 }
             }
@@ -89,25 +103,89 @@ component
     private string function findFunction(required string line){
         local.funcLabels = ['function', 'cffunction'];
         local.accessTypes = ['public', 'private', 'remote'];
-        arguments.line = replace(arguments.line, '/', '!');
-        local.lineSplit = listToArray(arguments.line, " <>(){}[];");
+        arguments.line = trim(arguments.line);
+        //if(preSplitCheck(arguments.line)){
+            local.lineSplit = listToArray(arguments.line, " (){}<>");
 
-        for(local.i = 1; local.i <= arrayLen(local.funcLabels); local.i++){
-            local.findFunc = local.lineSplit.find(local.funcLabels[local.i]);
-            if(local.findFunc > 0 && local.findFunc <= 3){
-                for(local.j = 1; local.j <= arrayLen(local.accessTypes); local.j++){
-                    if(!find('!', arguments.line)){
-                        if(local.funcLabels[local.i] == 'cffunction'){
-                            return arrayToList(local.lineSplit, " ");
-                        } else{
-                            return mid(arguments.line, 1, findOneOf('(', arguments.line)) & ')';
+            for(local.i = 1; local.i <= arrayLen(local.funcLabels); local.i++){
+                local.findFunc = local.lineSplit.find(local.funcLabels[local.i]);
+                if(local.findFunc > 0){
+                    for(local.j = 1; local.j <= arrayLen(local.accessTypes); local.j++){
+                        if(finalCheck(arguments.line)){
+                            if(local.funcLabels[local.i] == 'cffunction'){
+                                return arrayToList(local.lineSplit, " ");
+                            } else{
+                                local.func = mid(arguments.line, 1, findOneOf('(', arguments.line));
+                                return (len(func) > 0) ? (func & ')') : '';
+                            }
                         }
                     }
                 }
-                //writeOutput(arrayToList(local.lineSplit, " "));
-            }
+            //}
         }
         return '';
+    }
+
+    private boolean function preSplitCheck(required string line){
+        local.badPieces = [
+            '.forEach', '.each(', '.then(', 'jQuery', '(function(', '.all',
+            '.race', '.resolve','.reject', 'return function', 'console.'
+        ];
+        if(arguments.line == 'function(){'){
+            return false;
+        }
+        local.hasFwdSlash = find('/', arguments.line);
+        local.hasFunction = find('function', arguments.line);
+        local.hasEqual = find('=', arguments.line);
+        local.hasLeftParen = find('(', arguments.line);
+
+        if(find(':', arguments.line)){
+            local.tempSplit = listToArray(arguments.line, ':');
+            if(arrayLen(local.tempSplit) < 3){
+                return false;
+            }
+        }
+        if(mid(arguments.line, 1, local.hasLeftParen) == 'function('){
+            return false;
+        }
+        if(local.hasFwdSlash == 1){
+            return false; //get rid of complete comments
+        }
+        if(local.hasFunction && local.hasFwdSlash && local.hasFwdSlash > local.hasFunction){
+            return false; //get rid of comments
+        }
+        for(local.i = 1; local.i <= arrayLen(local.badPieces); local.i++){
+            if(find(local.badPieces[local.i], arguments.line)){
+                return false;
+            }
+        }
+        return true;
+    }
+
+    private boolean function finalCheck(required string line){
+        
+        local.badChars = ['$', "'", '&', '!', '['];
+        if(find('.', arguments.line) == 1){
+            return false;   //get rid of JS .function() and ()
+        }
+        local.hasComma = find(',', arguments.line);
+        local.hasQuote = find('"', arguments.line);
+        local.hasColon = find(':', arguments.line);
+        local.hasEqual = find('=', arguments.line);
+
+        if(local.hasComma && local.hasColon < find('function', arguments.line)){
+            return false;   //functions in structs
+        }
+        
+        if(local.hasColon && local.hasQuote){
+            return false;   //functions in structs
+        }
+        for(local.i = 1; local.i <= arrayLen(local.badChars); local.i++){
+            if(find(local.badChars[local.i], arguments.line)){
+                return false;
+            }
+        }
+        return true;
     }
 
     private void function displayHtml(required string output){
