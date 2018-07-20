@@ -1,0 +1,1870 @@
+Scanning {c:\source\cfmx\wwwroot\test\barrett\01-Basics.cfm} 
+Scanned {91} line(s), {2231} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Application.cfc} 
+         001).          Line: 0004         public any function onRequestStart()
+Scanned {8} line(s), {79} character(s), and found {1} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Barrett-Utils.cfc} 
+         001).          Line: 0007         public function sortArrOfStruct()
+         002).          Line: 0022         public function addArrayToXmlNode()
+         003).          Line: 0033         private function convertArrOfStructToXml()
+         004).          Line: 0061         public function convertXmlToArrOfStructs()
+         005).          Line: 0079         public function buildQueryString()
+         006).          Line: 0094         public function useHttpService()
+         007).          Line: 0108         private function searchArrOfStructs()
+         008).          Line: 0133         public function init()
+Scanned {139} line(s), {4157} character(s), and found {8} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\index.cfm} 
+Scanned {9} line(s), {96} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Code-Scanner\Code-Scanner.cfc} 
+         001).          Line: 0016         public function init()
+         002).          Line: 0022         public any function scan()
+         003).          Line: 0054         private any function scanFile()
+         004).          Line: 0089         private string function findFunction()
+         005).          Line: 0113         private void function displayHtml()
+Scanned {124} line(s), {4126} character(s), and found {5} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Code-Scanner\index.cfm} 
+Scanned {30} line(s), {974} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Intro-To-CF\01-Basics.cfm} 
+Scanned {91} line(s), {2231} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Intro-To-CF\02-Decisions-and-Loops.cfm} 
+Scanned {117} line(s), {2376} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Intro-To-CF\03-Functions-and-Components.cfm} 
+         001).          Line: 0005         cffunction name="getFullName" output="false" access="public" returnType="string"
+Scanned {25} line(s), {677} character(s), and found {1} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Intro-To-CF\04-Components.cfm} 
+Scanned {13} line(s), {308} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Intro-To-CF\Application.cfc} 
+Scanned {5} line(s), {38} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Intro-To-CF\Greeting.cfc} 
+         001).          Line: 0004         public string function getFullName()
+         002).          Line: 0009         public string function getGreeting ()
+Scanned {16} line(s), {367} character(s), and found {2} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Intro-To-CF\index.cfm} 
+Scanned {6} line(s), {49} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Testing\PentonAPI-Testing.cfm} 
+Scanned {56} line(s), {2380} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\01-Basics.cfm} 
+Scanned {91} line(s), {2231} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Application.cfc} 
+         001).          Line: 0004         public any function onRequestStart()
+Scanned {8} line(s), {79} character(s), and found {1} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Barrett-Utils.cfc} 
+         001).          Line: 0007         public function sortArrOfStruct()
+         002).          Line: 0022         public function addArrayToXmlNode()
+         003).          Line: 0033         private function convertArrOfStructToXml()
+         004).          Line: 0061         public function convertXmlToArrOfStructs()
+         005).          Line: 0079         public function buildQueryString()
+         006).          Line: 0094         public function useHttpService()
+         007).          Line: 0108         private function searchArrOfStructs()
+         008).          Line: 0133         public function init()
+Scanned {139} line(s), {4157} character(s), and found {8} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\index.cfm} 
+Scanned {9} line(s), {96} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Code-Scanner\Code-Scanner.cfc} 
+         001).          Line: 0016         public function init()
+         002).          Line: 0022         public any function scan()
+         003).          Line: 0054         private any function scanFile()
+         004).          Line: 0089         private string function findFunction()
+         005).          Line: 0113         private void function displayHtml()
+Scanned {124} line(s), {4126} character(s), and found {5} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Code-Scanner\index.cfm} 
+Scanned {30} line(s), {974} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Intro-To-CF\01-Basics.cfm} 
+Scanned {91} line(s), {2231} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Intro-To-CF\02-Decisions-and-Loops.cfm} 
+Scanned {117} line(s), {2376} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Intro-To-CF\03-Functions-and-Components.cfm} 
+         001).          Line: 0005         cffunction name="getFullName" output="false" access="public" returnType="string"
+Scanned {25} line(s), {677} character(s), and found {1} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Intro-To-CF\04-Components.cfm} 
+Scanned {13} line(s), {308} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Intro-To-CF\Application.cfc} 
+Scanned {5} line(s), {38} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Intro-To-CF\Greeting.cfc} 
+         001).          Line: 0004         public string function getFullName()
+         002).          Line: 0009         public string function getGreeting ()
+Scanned {16} line(s), {367} character(s), and found {2} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Intro-To-CF\index.cfm} 
+Scanned {6} line(s), {49} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Testing\PentonAPI-Testing.cfm} 
+Scanned {56} line(s), {2380} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\agents\business\quote\ac\display.cfc} 
+         001).          Line: 0014         cffunction name="getPage" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         002).          Line: 0384         cffunction name="getDebitsCredits" access="remote" returnformat="JSON"
+         003).          Line: 0402         cffunction name="checkPublicMaxCapacity" access="remote" returnformat="JSON"
+         004).          Line: 0422         cffunction name="getLeftsideNotifications" access="remote" returntype="any" output="false" returnformat="JSON"
+         005).          Line: 0454         cffunction name="getVinEditForm" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         006).          Line: 0474         cffunction name="getSmartGroupsForm" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         007).          Line: 0490         cffunction name="createSmartGroup" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         008).          Line: 0516         cffunction name="updateSmartGroup" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         009).          Line: 0566         cffunction name="createVehicleGroup" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         010).          Line: 0607         cffunction name="displayAttachDriverFile" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         011).          Line: 0678         cffunction name="displayAttachVehicleFile" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         012).          Line: 0749         cffunction name="displayAttachDrVehicle" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         013).          Line: 0835         cffunction name="displayAttachVehDriver" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         014).          Line: 0864         cffunction name="changeVehicleCoverageGroup" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         015).          Line: 0908         cffunction name="displayVehicleCoverageGroup" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         016).          Line: 0926         cffunction name="createVehicleCoverageGroup" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         017).          Line: 0951         cffunction name="deleteSmartGroup" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         018).          Line: 0974         cffunction name="getGroupVehiclesDisplay" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         019).          Line: 0992         cffunction name="getGroupSettingsDisplay" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         020).          Line: 1010         cffunction name="getVinEditFormUW" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         021).          Line: 1031         cffunction name="getBodyStyleEditForm" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         022).          Line: 1053         cffunction name="getYMMEditForm" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         023).          Line: 1074         cffunction name="getVin" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         024).          Line: 1257         cffunction name="multirowAdd" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         025).          Line: 1397         cffunction name="multirowDelete" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         026).          Line: 1532         cffunction name="getLegalNameBlockHTML" access="remote" returnformat="JSON"
+         027).          Line: 1553         cffunction name="removeDriverVehicle" displayname="" access="remote" returnformat="JSON" output="false" returntype="any" hint=""
+         028).          Line: 1582         cffunction name="removeDriverVehicleType" displayname="" access="remote" returnformat="JSON" output="false" returntype="any" hint=""
+         029).          Line: 1610         cffunction name="deleteFile" displayname="" access="remote" returnformat="JSON" output="false" returntype="any" hint=""
+         030).          Line: 1637         cffunction name="deleteSMFile" displayname="" access="remote" returnformat="JSON" output="false" returntype="any" hint=""
+         031).          Line: 1668         cffunction name="clickSwapMultirowAdd" access="remote" output="false" returntype="Struct" returnformat="JSON"
+         032).          Line: 1757         cffunction name="clickSwapMultirowDelete" access="remote" output="false" returntype="Struct" returnformat="JSON"
+         033).          Line: 1849         cffunction name="ziplookup" displayname="" access="public" output="false" returntype="any" hint=""
+         034).          Line: 1853         cffunction name="AutoCompleteFilterListMultiSelectAdd" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         035).          Line: 1936         cffunction name="AutoCompleteFilterListMultiSelectRemove" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         036).          Line: 2018         cffunction name="getCASSremote" access="remote" output="false" returntype="any" returnformat="JSON"
+         037).          Line: 2103         cffunction name="displayAddDriverOptions" access="remote" output="false" returntype="any" returnformat="JSON"
+         038).          Line: 2120         cffunction name="displayNamedInsuredDriver" access="remote" output="false" returntype="any" returnformat="JSON"
+         039).          Line: 2140         cffunction name="displayTitledOwnerDriver" access="remote" output="false" returntype="any" returnformat="JSON"
+         040).          Line: 2160         cffunction name="showNewVehicleForm" access="remote" output="false" returntype="any" returnformat="JSON"
+         041).          Line: 2195         cffunction name="displayTruckBodyAgeStyle" access="remote" output="false" returntype="any" returnformat="JSON"
+         042).          Line: 2227         cffunction name="displayTruckOptionsUpdate" access="remote" output="false" returntype="any" returnformat="JSON"
+         043).          Line: 2272         cffunction name="displayTruckBodyAgeStyleEnter" access="remote" output="false" returntype="any" returnformat="JSON"
+         044).          Line: 2317         cffunction name="displayBulkImportUpload" access="remote" output="false" returntype="any" returnformat="JSON"
+         045).          Line: 2342         cffunction name="displayBulkImportResults" access="remote" output="false" returntype="any" returnformat="JSON"
+Scanned {2440} line(s), {92178} character(s), and found {45} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\01-Basics.cfm} 
+Scanned {91} line(s), {2231} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Application.cfc} 
+         001).          Line: 0004         public any function onRequestStart()
+Scanned {8} line(s), {79} character(s), and found {1} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Barrett-Utils.cfc} 
+         001).          Line: 0007         public function sortArrOfStruct()
+         002).          Line: 0022         public function addArrayToXmlNode()
+         003).          Line: 0033         private function convertArrOfStructToXml()
+         004).          Line: 0061         public function convertXmlToArrOfStructs()
+         005).          Line: 0079         public function buildQueryString()
+         006).          Line: 0094         public function useHttpService()
+         007).          Line: 0108         private function searchArrOfStructs()
+         008).          Line: 0133         public function init()
+Scanned {139} line(s), {4157} character(s), and found {8} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\index.cfm} 
+Scanned {9} line(s), {96} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Code-Scanner\Code-Scanner.cfc} 
+         001).          Line: 0016         public function init()
+         002).          Line: 0022         public any function scan()
+         003).          Line: 0054         private any function scanFile()
+         004).          Line: 0089         private string function findFunction()
+         005).          Line: 0113         private void function displayHtml()
+Scanned {124} line(s), {4126} character(s), and found {5} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Code-Scanner\index.cfm} 
+Scanned {30} line(s), {974} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Intro-To-CF\01-Basics.cfm} 
+Scanned {91} line(s), {2231} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Intro-To-CF\02-Decisions-and-Loops.cfm} 
+Scanned {117} line(s), {2376} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Intro-To-CF\03-Functions-and-Components.cfm} 
+         001).          Line: 0005         cffunction name="getFullName" output="false" access="public" returnType="string"
+Scanned {25} line(s), {677} character(s), and found {1} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Intro-To-CF\04-Components.cfm} 
+Scanned {13} line(s), {308} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Intro-To-CF\Application.cfc} 
+Scanned {5} line(s), {38} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Intro-To-CF\Greeting.cfc} 
+         001).          Line: 0004         public string function getFullName()
+         002).          Line: 0009         public string function getGreeting ()
+Scanned {16} line(s), {367} character(s), and found {2} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Intro-To-CF\index.cfm} 
+Scanned {6} line(s), {49} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Testing\PentonAPI-Testing.cfm} 
+Scanned {56} line(s), {2380} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\agents\business\quote\ac\display.cfc} 
+         001).          Line: 0014         cffunction name="getPage" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         002).          Line: 0384         cffunction name="getDebitsCredits" access="remote" returnformat="JSON"
+         003).          Line: 0402         cffunction name="checkPublicMaxCapacity" access="remote" returnformat="JSON"
+         004).          Line: 0422         cffunction name="getLeftsideNotifications" access="remote" returntype="any" output="false" returnformat="JSON"
+         005).          Line: 0454         cffunction name="getVinEditForm" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         006).          Line: 0474         cffunction name="getSmartGroupsForm" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         007).          Line: 0490         cffunction name="createSmartGroup" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         008).          Line: 0516         cffunction name="updateSmartGroup" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         009).          Line: 0566         cffunction name="createVehicleGroup" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         010).          Line: 0607         cffunction name="displayAttachDriverFile" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         011).          Line: 0678         cffunction name="displayAttachVehicleFile" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         012).          Line: 0749         cffunction name="displayAttachDrVehicle" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         013).          Line: 0835         cffunction name="displayAttachVehDriver" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         014).          Line: 0864         cffunction name="changeVehicleCoverageGroup" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         015).          Line: 0908         cffunction name="displayVehicleCoverageGroup" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         016).          Line: 0926         cffunction name="createVehicleCoverageGroup" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         017).          Line: 0951         cffunction name="deleteSmartGroup" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         018).          Line: 0974         cffunction name="getGroupVehiclesDisplay" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         019).          Line: 0992         cffunction name="getGroupSettingsDisplay" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         020).          Line: 1010         cffunction name="getVinEditFormUW" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         021).          Line: 1031         cffunction name="getBodyStyleEditForm" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         022).          Line: 1053         cffunction name="getYMMEditForm" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         023).          Line: 1074         cffunction name="getVin" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         024).          Line: 1257         cffunction name="multirowAdd" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         025).          Line: 1397         cffunction name="multirowDelete" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         026).          Line: 1532         cffunction name="getLegalNameBlockHTML" access="remote" returnformat="JSON"
+         027).          Line: 1553         cffunction name="removeDriverVehicle" displayname="" access="remote" returnformat="JSON" output="false" returntype="any" hint=""
+         028).          Line: 1582         cffunction name="removeDriverVehicleType" displayname="" access="remote" returnformat="JSON" output="false" returntype="any" hint=""
+         029).          Line: 1610         cffunction name="deleteFile" displayname="" access="remote" returnformat="JSON" output="false" returntype="any" hint=""
+         030).          Line: 1637         cffunction name="deleteSMFile" displayname="" access="remote" returnformat="JSON" output="false" returntype="any" hint=""
+         031).          Line: 1668         cffunction name="clickSwapMultirowAdd" access="remote" output="false" returntype="Struct" returnformat="JSON"
+         032).          Line: 1757         cffunction name="clickSwapMultirowDelete" access="remote" output="false" returntype="Struct" returnformat="JSON"
+         033).          Line: 1849         cffunction name="ziplookup" displayname="" access="public" output="false" returntype="any" hint=""
+         034).          Line: 1853         cffunction name="AutoCompleteFilterListMultiSelectAdd" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         035).          Line: 1936         cffunction name="AutoCompleteFilterListMultiSelectRemove" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         036).          Line: 2018         cffunction name="getCASSremote" access="remote" output="false" returntype="any" returnformat="JSON"
+         037).          Line: 2103         cffunction name="displayAddDriverOptions" access="remote" output="false" returntype="any" returnformat="JSON"
+         038).          Line: 2120         cffunction name="displayNamedInsuredDriver" access="remote" output="false" returntype="any" returnformat="JSON"
+         039).          Line: 2140         cffunction name="displayTitledOwnerDriver" access="remote" output="false" returntype="any" returnformat="JSON"
+         040).          Line: 2160         cffunction name="showNewVehicleForm" access="remote" output="false" returntype="any" returnformat="JSON"
+         041).          Line: 2195         cffunction name="displayTruckBodyAgeStyle" access="remote" output="false" returntype="any" returnformat="JSON"
+         042).          Line: 2227         cffunction name="displayTruckOptionsUpdate" access="remote" output="false" returntype="any" returnformat="JSON"
+         043).          Line: 2272         cffunction name="displayTruckBodyAgeStyleEnter" access="remote" output="false" returntype="any" returnformat="JSON"
+         044).          Line: 2317         cffunction name="displayBulkImportUpload" access="remote" output="false" returntype="any" returnformat="JSON"
+         045).          Line: 2342         cffunction name="displayBulkImportResults" access="remote" output="false" returntype="any" returnformat="JSON"
+Scanned {2440} line(s), {92178} character(s), and found {45} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\agents\business\quote\bc\display.cfc} 
+         001).          Line: 0015         cffunction name="getPage" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         002).          Line: 0342         cffunction name="getLegalNameBlockHTML" access="remote" returnformat="JSON"
+         003).          Line: 0366         remote any function dropDownMultiRowAdd()
+         004).          Line: 0447         remote any function dropDownMultiRowDelete()
+         005).          Line: 0517         remote any function dropDownMultiHeaderLabel()
+         006).          Line: 0581         private any function SecureUtil()
+         007).          Line: 0585         private goodville.render.quote.businessRenderer function getRenderer()
+Scanned {595} line(s), {25241} character(s), and found {7} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\01-Basics.cfm} 
+Scanned {91} line(s), {2231} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Application.cfc} 
+         001).          Line: 0004         public any function onRequestStart()
+Scanned {8} line(s), {79} character(s), and found {1} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Barrett-Utils.cfc} 
+         001).          Line: 0007         public function sortArrOfStruct()
+         002).          Line: 0022         public function addArrayToXmlNode()
+         003).          Line: 0033         private function convertArrOfStructToXml()
+         004).          Line: 0061         public function convertXmlToArrOfStructs()
+         005).          Line: 0079         public function buildQueryString()
+         006).          Line: 0094         public function useHttpService()
+         007).          Line: 0108         private function searchArrOfStructs()
+         008).          Line: 0133         public function init()
+Scanned {139} line(s), {4157} character(s), and found {8} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\index.cfm} 
+Scanned {9} line(s), {96} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Code-Scanner\Code-Scanner.cfc} 
+         001).          Line: 0016         public function init()
+         002).          Line: 0022         public any function scan()
+         003).          Line: 0054         private any function scanFile()
+         004).          Line: 0089         private string function findFunction()
+         005).          Line: 0113         private void function displayHtml()
+Scanned {124} line(s), {4126} character(s), and found {5} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Code-Scanner\index.cfm} 
+Scanned {30} line(s), {974} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Intro-To-CF\01-Basics.cfm} 
+Scanned {91} line(s), {2231} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Intro-To-CF\02-Decisions-and-Loops.cfm} 
+Scanned {117} line(s), {2376} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Intro-To-CF\03-Functions-and-Components.cfm} 
+         001).          Line: 0005         cffunction name="getFullName" output="false" access="public" returnType="string"
+Scanned {25} line(s), {677} character(s), and found {1} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Intro-To-CF\04-Components.cfm} 
+Scanned {13} line(s), {308} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Intro-To-CF\Application.cfc} 
+Scanned {5} line(s), {38} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Intro-To-CF\Greeting.cfc} 
+         001).          Line: 0004         public string function getFullName()
+         002).          Line: 0009         public string function getGreeting ()
+Scanned {16} line(s), {367} character(s), and found {2} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Intro-To-CF\index.cfm} 
+Scanned {6} line(s), {49} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Testing\PentonAPI-Testing.cfm} 
+Scanned {56} line(s), {2380} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\agents\business\quote\ac\display.cfc} 
+         001).          Line: 0014         cffunction name="getPage" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         002).          Line: 0384         cffunction name="getDebitsCredits" access="remote" returnformat="JSON"
+         003).          Line: 0402         cffunction name="checkPublicMaxCapacity" access="remote" returnformat="JSON"
+         004).          Line: 0422         cffunction name="getLeftsideNotifications" access="remote" returntype="any" output="false" returnformat="JSON"
+         005).          Line: 0454         cffunction name="getVinEditForm" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         006).          Line: 0474         cffunction name="getSmartGroupsForm" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         007).          Line: 0490         cffunction name="createSmartGroup" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         008).          Line: 0516         cffunction name="updateSmartGroup" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         009).          Line: 0566         cffunction name="createVehicleGroup" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         010).          Line: 0607         cffunction name="displayAttachDriverFile" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         011).          Line: 0678         cffunction name="displayAttachVehicleFile" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         012).          Line: 0749         cffunction name="displayAttachDrVehicle" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         013).          Line: 0835         cffunction name="displayAttachVehDriver" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         014).          Line: 0864         cffunction name="changeVehicleCoverageGroup" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         015).          Line: 0908         cffunction name="displayVehicleCoverageGroup" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         016).          Line: 0926         cffunction name="createVehicleCoverageGroup" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         017).          Line: 0951         cffunction name="deleteSmartGroup" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         018).          Line: 0974         cffunction name="getGroupVehiclesDisplay" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         019).          Line: 0992         cffunction name="getGroupSettingsDisplay" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         020).          Line: 1010         cffunction name="getVinEditFormUW" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         021).          Line: 1031         cffunction name="getBodyStyleEditForm" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         022).          Line: 1053         cffunction name="getYMMEditForm" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         023).          Line: 1074         cffunction name="getVin" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         024).          Line: 1257         cffunction name="multirowAdd" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         025).          Line: 1397         cffunction name="multirowDelete" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         026).          Line: 1532         cffunction name="getLegalNameBlockHTML" access="remote" returnformat="JSON"
+         027).          Line: 1553         cffunction name="removeDriverVehicle" displayname="" access="remote" returnformat="JSON" output="false" returntype="any" hint=""
+         028).          Line: 1582         cffunction name="removeDriverVehicleType" displayname="" access="remote" returnformat="JSON" output="false" returntype="any" hint=""
+         029).          Line: 1610         cffunction name="deleteFile" displayname="" access="remote" returnformat="JSON" output="false" returntype="any" hint=""
+         030).          Line: 1637         cffunction name="deleteSMFile" displayname="" access="remote" returnformat="JSON" output="false" returntype="any" hint=""
+         031).          Line: 1668         cffunction name="clickSwapMultirowAdd" access="remote" output="false" returntype="Struct" returnformat="JSON"
+         032).          Line: 1757         cffunction name="clickSwapMultirowDelete" access="remote" output="false" returntype="Struct" returnformat="JSON"
+         033).          Line: 1849         cffunction name="ziplookup" displayname="" access="public" output="false" returntype="any" hint=""
+         034).          Line: 1853         cffunction name="AutoCompleteFilterListMultiSelectAdd" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         035).          Line: 1936         cffunction name="AutoCompleteFilterListMultiSelectRemove" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         036).          Line: 2018         cffunction name="getCASSremote" access="remote" output="false" returntype="any" returnformat="JSON"
+         037).          Line: 2103         cffunction name="displayAddDriverOptions" access="remote" output="false" returntype="any" returnformat="JSON"
+         038).          Line: 2120         cffunction name="displayNamedInsuredDriver" access="remote" output="false" returntype="any" returnformat="JSON"
+         039).          Line: 2140         cffunction name="displayTitledOwnerDriver" access="remote" output="false" returntype="any" returnformat="JSON"
+         040).          Line: 2160         cffunction name="showNewVehicleForm" access="remote" output="false" returntype="any" returnformat="JSON"
+         041).          Line: 2195         cffunction name="displayTruckBodyAgeStyle" access="remote" output="false" returntype="any" returnformat="JSON"
+         042).          Line: 2227         cffunction name="displayTruckOptionsUpdate" access="remote" output="false" returntype="any" returnformat="JSON"
+         043).          Line: 2272         cffunction name="displayTruckBodyAgeStyleEnter" access="remote" output="false" returntype="any" returnformat="JSON"
+         044).          Line: 2317         cffunction name="displayBulkImportUpload" access="remote" output="false" returntype="any" returnformat="JSON"
+         045).          Line: 2342         cffunction name="displayBulkImportResults" access="remote" output="false" returntype="any" returnformat="JSON"
+Scanned {2440} line(s), {92178} character(s), and found {45} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\agents\business\quote\bc\display.cfc} 
+         001).          Line: 0015         cffunction name="getPage" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         002).          Line: 0342         cffunction name="getLegalNameBlockHTML" access="remote" returnformat="JSON"
+         003).          Line: 0366         remote any function dropDownMultiRowAdd()
+         004).          Line: 0447         remote any function dropDownMultiRowDelete()
+         005).          Line: 0517         remote any function dropDownMultiHeaderLabel()
+         006).          Line: 0581         private any function SecureUtil()
+         007).          Line: 0585         private goodville.render.quote.businessRenderer function getRenderer()
+Scanned {595} line(s), {25241} character(s), and found {7} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {C:\source\cfmx\wwwroot\agents\business\quote\df\display.cfc} 
+         001).          Line: 0011         cffunction name="getPage" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         002).          Line: 0355         cffunction name="multirowAdd" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         003).          Line: 0496         cffunction name="multirowDelete" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         004).          Line: 0641         cffunction name="getLegalNameBlockHTML" access="remote" returnformat="JSON"
+         005).          Line: 0800         cffunction name="clickSwapMultirowAdd" access="remote" output="false" returntype="Struct" returnformat="JSON"
+         006).          Line: 0896         cffunction name="clickSwapMultirowDelete" access="remote" output="false" returntype="Struct" returnformat="JSON"
+         007).          Line: 0997         remote struct function getCASSremote()
+Scanned {1057} line(s), {40355} character(s), and found {7} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\01-Basics.cfm} 
+Scanned {91} line(s), {2231} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Application.cfc} 
+         001).          Line: 0004         public any function onRequestStart()
+Scanned {8} line(s), {79} character(s), and found {1} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Barrett-Utils.cfc} 
+         001).          Line: 0007         public function sortArrOfStruct()
+         002).          Line: 0022         public function addArrayToXmlNode()
+         003).          Line: 0033         private function convertArrOfStructToXml()
+         004).          Line: 0061         public function convertXmlToArrOfStructs()
+         005).          Line: 0079         public function buildQueryString()
+         006).          Line: 0094         public function useHttpService()
+         007).          Line: 0108         private function searchArrOfStructs()
+         008).          Line: 0133         public function init()
+Scanned {139} line(s), {4157} character(s), and found {8} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\index.cfm} 
+Scanned {9} line(s), {96} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Code-Scanner\Code-Scanner.cfc} 
+         001).          Line: 0016         public function init()
+         002).          Line: 0022         public any function scan()
+         003).          Line: 0054         private any function scanFile()
+         004).          Line: 0089         private string function findFunction()
+         005).          Line: 0113         private void function displayHtml()
+Scanned {124} line(s), {4126} character(s), and found {5} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Code-Scanner\index.cfm} 
+Scanned {30} line(s), {974} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Intro-To-CF\01-Basics.cfm} 
+Scanned {91} line(s), {2231} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Intro-To-CF\02-Decisions-and-Loops.cfm} 
+Scanned {117} line(s), {2376} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Intro-To-CF\03-Functions-and-Components.cfm} 
+         001).          Line: 0005         cffunction name="getFullName" output="false" access="public" returnType="string"
+Scanned {25} line(s), {677} character(s), and found {1} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Intro-To-CF\04-Components.cfm} 
+Scanned {13} line(s), {308} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Intro-To-CF\Application.cfc} 
+Scanned {5} line(s), {38} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Intro-To-CF\Greeting.cfc} 
+         001).          Line: 0004         public string function getFullName()
+         002).          Line: 0009         public string function getGreeting ()
+Scanned {16} line(s), {367} character(s), and found {2} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Intro-To-CF\index.cfm} 
+Scanned {6} line(s), {49} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Testing\PentonAPI-Testing.cfm} 
+Scanned {56} line(s), {2380} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\agents\business\quote\ac\display.cfc} 
+         001).          Line: 0014         cffunction name="getPage" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         002).          Line: 0384         cffunction name="getDebitsCredits" access="remote" returnformat="JSON"
+         003).          Line: 0402         cffunction name="checkPublicMaxCapacity" access="remote" returnformat="JSON"
+         004).          Line: 0422         cffunction name="getLeftsideNotifications" access="remote" returntype="any" output="false" returnformat="JSON"
+         005).          Line: 0454         cffunction name="getVinEditForm" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         006).          Line: 0474         cffunction name="getSmartGroupsForm" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         007).          Line: 0490         cffunction name="createSmartGroup" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         008).          Line: 0516         cffunction name="updateSmartGroup" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         009).          Line: 0566         cffunction name="createVehicleGroup" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         010).          Line: 0607         cffunction name="displayAttachDriverFile" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         011).          Line: 0678         cffunction name="displayAttachVehicleFile" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         012).          Line: 0749         cffunction name="displayAttachDrVehicle" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         013).          Line: 0835         cffunction name="displayAttachVehDriver" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         014).          Line: 0864         cffunction name="changeVehicleCoverageGroup" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         015).          Line: 0908         cffunction name="displayVehicleCoverageGroup" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         016).          Line: 0926         cffunction name="createVehicleCoverageGroup" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         017).          Line: 0951         cffunction name="deleteSmartGroup" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         018).          Line: 0974         cffunction name="getGroupVehiclesDisplay" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         019).          Line: 0992         cffunction name="getGroupSettingsDisplay" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         020).          Line: 1010         cffunction name="getVinEditFormUW" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         021).          Line: 1031         cffunction name="getBodyStyleEditForm" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         022).          Line: 1053         cffunction name="getYMMEditForm" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         023).          Line: 1074         cffunction name="getVin" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         024).          Line: 1257         cffunction name="multirowAdd" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         025).          Line: 1397         cffunction name="multirowDelete" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         026).          Line: 1532         cffunction name="getLegalNameBlockHTML" access="remote" returnformat="JSON"
+         027).          Line: 1553         cffunction name="removeDriverVehicle" displayname="" access="remote" returnformat="JSON" output="false" returntype="any" hint=""
+         028).          Line: 1582         cffunction name="removeDriverVehicleType" displayname="" access="remote" returnformat="JSON" output="false" returntype="any" hint=""
+         029).          Line: 1610         cffunction name="deleteFile" displayname="" access="remote" returnformat="JSON" output="false" returntype="any" hint=""
+         030).          Line: 1637         cffunction name="deleteSMFile" displayname="" access="remote" returnformat="JSON" output="false" returntype="any" hint=""
+         031).          Line: 1668         cffunction name="clickSwapMultirowAdd" access="remote" output="false" returntype="Struct" returnformat="JSON"
+         032).          Line: 1757         cffunction name="clickSwapMultirowDelete" access="remote" output="false" returntype="Struct" returnformat="JSON"
+         033).          Line: 1849         cffunction name="ziplookup" displayname="" access="public" output="false" returntype="any" hint=""
+         034).          Line: 1853         cffunction name="AutoCompleteFilterListMultiSelectAdd" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         035).          Line: 1936         cffunction name="AutoCompleteFilterListMultiSelectRemove" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         036).          Line: 2018         cffunction name="getCASSremote" access="remote" output="false" returntype="any" returnformat="JSON"
+         037).          Line: 2103         cffunction name="displayAddDriverOptions" access="remote" output="false" returntype="any" returnformat="JSON"
+         038).          Line: 2120         cffunction name="displayNamedInsuredDriver" access="remote" output="false" returntype="any" returnformat="JSON"
+         039).          Line: 2140         cffunction name="displayTitledOwnerDriver" access="remote" output="false" returntype="any" returnformat="JSON"
+         040).          Line: 2160         cffunction name="showNewVehicleForm" access="remote" output="false" returntype="any" returnformat="JSON"
+         041).          Line: 2195         cffunction name="displayTruckBodyAgeStyle" access="remote" output="false" returntype="any" returnformat="JSON"
+         042).          Line: 2227         cffunction name="displayTruckOptionsUpdate" access="remote" output="false" returntype="any" returnformat="JSON"
+         043).          Line: 2272         cffunction name="displayTruckBodyAgeStyleEnter" access="remote" output="false" returntype="any" returnformat="JSON"
+         044).          Line: 2317         cffunction name="displayBulkImportUpload" access="remote" output="false" returntype="any" returnformat="JSON"
+         045).          Line: 2342         cffunction name="displayBulkImportResults" access="remote" output="false" returntype="any" returnformat="JSON"
+Scanned {2440} line(s), {92178} character(s), and found {45} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\agents\business\quote\bc\display.cfc} 
+         001).          Line: 0015         cffunction name="getPage" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         002).          Line: 0342         cffunction name="getLegalNameBlockHTML" access="remote" returnformat="JSON"
+         003).          Line: 0366         remote any function dropDownMultiRowAdd()
+         004).          Line: 0447         remote any function dropDownMultiRowDelete()
+         005).          Line: 0517         remote any function dropDownMultiHeaderLabel()
+         006).          Line: 0581         private any function SecureUtil()
+         007).          Line: 0585         private goodville.render.quote.businessRenderer function getRenderer()
+Scanned {595} line(s), {25241} character(s), and found {7} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {C:\source\cfmx\wwwroot\agents\business\quote\df\display.cfc} 
+         001).          Line: 0011         cffunction name="getPage" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         002).          Line: 0355         cffunction name="multirowAdd" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         003).          Line: 0496         cffunction name="multirowDelete" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         004).          Line: 0641         cffunction name="getLegalNameBlockHTML" access="remote" returnformat="JSON"
+         005).          Line: 0800         cffunction name="clickSwapMultirowAdd" access="remote" output="false" returntype="Struct" returnformat="JSON"
+         006).          Line: 0896         cffunction name="clickSwapMultirowDelete" access="remote" output="false" returntype="Struct" returnformat="JSON"
+         007).          Line: 0997         remote struct function getCASSremote()
+Scanned {1057} line(s), {40355} character(s), and found {7} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {C:\source\cfmx\wwwroot\agents\business\quote\farm\display.cfc} 
+         001).          Line: 0014         cffunction name="getDwellingCoverageManager" access="private" output="false" returnType="goodville.process.quote.farm.dwellingCoverageManager"
+         002).          Line: 0021         cffunction name="getCoverageManager" access="private" output="false" returnType="goodville.process.quote.farm.coverageManager"
+         003).          Line: 0029         cffunction name="getPage" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         004).          Line: 0373         cffunction name="multirowAdd" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         005).          Line: 0377         cffunction name="clickSwapMultirowAdd" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         006).          Line: 0530         cffunction name="multirowDelete" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         007).          Line: 0534         cffunction name="clickSwapMultirowDelete" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         008).          Line: 0708         cffunction name="getLegalNameBlockHTML" access="remote" returnformat="JSON"
+         009).          Line: 0730         private any function SecureUtil()
+         010).          Line: 0735         remote any function GenerateTableGroupRow()
+         011).          Line: 0807         remote any function getCASS ()
+         012).          Line: 0888         remote any function computeCoverageB()
+         013).          Line: 0955         remote any function computeCoverageC()
+         014).          Line: 1045         remote any function computeCoverageD()
+         015).          Line: 1115         remote any function FindTypeOfBuildingRatingType()
+         016).          Line: 1166         remote any function dropDownMultiRowAdd()
+         017).          Line: 1247         remote any function dropDownMultiRowDelete()
+         018).          Line: 1317         remote any function dropDownMultiHeaderLabel()
+         019).          Line: 1383         remote any function getFarmPersonalPropertyAdditionalSpecs()
+         020).          Line: 1438         remote any function getPersonalPropertyAdditionalSpecs()
+         021).          Line: 1496         remote any function DeleteLiabilityCoverageInsured()
+         022).          Line: 1556         remote any function GenerateLiabilityCoverageInsuredRow()
+         023).          Line: 1618         remote any function getQuoteLocationList()
+         024).          Line: 1670         remote any function getQuoteFarmProperies()
+         025).          Line: 1723         remote any function getSummaryPremium()
+         026).          Line: 1771         remote any function setFieldValues()
+         027).          Line: 1820         remote any function getDeductibleItems()
+         028).          Line: 1907         remote any function getLeftsideNotifications()
+Scanned {1967} line(s), {70079} character(s), and found {28} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\01-Basics.cfm} 
+Scanned {91} line(s), {2231} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Application.cfc} 
+         001).          Line: 0004         public any function onRequestStart()
+Scanned {8} line(s), {79} character(s), and found {1} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Barrett-Utils.cfc} 
+         001).          Line: 0007         public function sortArrOfStruct()
+         002).          Line: 0022         public function addArrayToXmlNode()
+         003).          Line: 0033         private function convertArrOfStructToXml()
+         004).          Line: 0061         public function convertXmlToArrOfStructs()
+         005).          Line: 0079         public function buildQueryString()
+         006).          Line: 0094         public function useHttpService()
+         007).          Line: 0108         private function searchArrOfStructs()
+         008).          Line: 0133         public function init()
+Scanned {139} line(s), {4157} character(s), and found {8} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\index.cfm} 
+Scanned {9} line(s), {96} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Code-Scanner\Code-Scanner.cfc} 
+         001).          Line: 0016         public function init()
+         002).          Line: 0022         public any function scan()
+         003).          Line: 0054         private any function scanFile()
+         004).          Line: 0089         private string function findFunction()
+         005).          Line: 0113         private void function displayHtml()
+Scanned {124} line(s), {4126} character(s), and found {5} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Code-Scanner\index.cfm} 
+Scanned {30} line(s), {974} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Intro-To-CF\01-Basics.cfm} 
+Scanned {91} line(s), {2231} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Intro-To-CF\02-Decisions-and-Loops.cfm} 
+Scanned {117} line(s), {2376} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Intro-To-CF\03-Functions-and-Components.cfm} 
+         001).          Line: 0005         cffunction name="getFullName" output="false" access="public" returnType="string"
+Scanned {25} line(s), {677} character(s), and found {1} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Intro-To-CF\04-Components.cfm} 
+Scanned {13} line(s), {308} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Intro-To-CF\Application.cfc} 
+Scanned {5} line(s), {38} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Intro-To-CF\Greeting.cfc} 
+         001).          Line: 0004         public string function getFullName()
+         002).          Line: 0009         public string function getGreeting ()
+Scanned {16} line(s), {367} character(s), and found {2} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Intro-To-CF\index.cfm} 
+Scanned {6} line(s), {49} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Testing\PentonAPI-Testing.cfm} 
+Scanned {56} line(s), {2380} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\agents\business\quote\ac\display.cfc} 
+         001).          Line: 0014         cffunction name="getPage" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         002).          Line: 0384         cffunction name="getDebitsCredits" access="remote" returnformat="JSON"
+         003).          Line: 0402         cffunction name="checkPublicMaxCapacity" access="remote" returnformat="JSON"
+         004).          Line: 0422         cffunction name="getLeftsideNotifications" access="remote" returntype="any" output="false" returnformat="JSON"
+         005).          Line: 0454         cffunction name="getVinEditForm" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         006).          Line: 0474         cffunction name="getSmartGroupsForm" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         007).          Line: 0490         cffunction name="createSmartGroup" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         008).          Line: 0516         cffunction name="updateSmartGroup" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         009).          Line: 0566         cffunction name="createVehicleGroup" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         010).          Line: 0607         cffunction name="displayAttachDriverFile" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         011).          Line: 0678         cffunction name="displayAttachVehicleFile" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         012).          Line: 0749         cffunction name="displayAttachDrVehicle" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         013).          Line: 0835         cffunction name="displayAttachVehDriver" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         014).          Line: 0864         cffunction name="changeVehicleCoverageGroup" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         015).          Line: 0908         cffunction name="displayVehicleCoverageGroup" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         016).          Line: 0926         cffunction name="createVehicleCoverageGroup" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         017).          Line: 0951         cffunction name="deleteSmartGroup" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         018).          Line: 0974         cffunction name="getGroupVehiclesDisplay" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         019).          Line: 0992         cffunction name="getGroupSettingsDisplay" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         020).          Line: 1010         cffunction name="getVinEditFormUW" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         021).          Line: 1031         cffunction name="getBodyStyleEditForm" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         022).          Line: 1053         cffunction name="getYMMEditForm" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         023).          Line: 1074         cffunction name="getVin" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         024).          Line: 1257         cffunction name="multirowAdd" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         025).          Line: 1397         cffunction name="multirowDelete" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         026).          Line: 1532         cffunction name="getLegalNameBlockHTML" access="remote" returnformat="JSON"
+         027).          Line: 1553         cffunction name="removeDriverVehicle" displayname="" access="remote" returnformat="JSON" output="false" returntype="any" hint=""
+         028).          Line: 1582         cffunction name="removeDriverVehicleType" displayname="" access="remote" returnformat="JSON" output="false" returntype="any" hint=""
+         029).          Line: 1610         cffunction name="deleteFile" displayname="" access="remote" returnformat="JSON" output="false" returntype="any" hint=""
+         030).          Line: 1637         cffunction name="deleteSMFile" displayname="" access="remote" returnformat="JSON" output="false" returntype="any" hint=""
+         031).          Line: 1668         cffunction name="clickSwapMultirowAdd" access="remote" output="false" returntype="Struct" returnformat="JSON"
+         032).          Line: 1757         cffunction name="clickSwapMultirowDelete" access="remote" output="false" returntype="Struct" returnformat="JSON"
+         033).          Line: 1849         cffunction name="ziplookup" displayname="" access="public" output="false" returntype="any" hint=""
+         034).          Line: 1853         cffunction name="AutoCompleteFilterListMultiSelectAdd" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         035).          Line: 1936         cffunction name="AutoCompleteFilterListMultiSelectRemove" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         036).          Line: 2018         cffunction name="getCASSremote" access="remote" output="false" returntype="any" returnformat="JSON"
+         037).          Line: 2103         cffunction name="displayAddDriverOptions" access="remote" output="false" returntype="any" returnformat="JSON"
+         038).          Line: 2120         cffunction name="displayNamedInsuredDriver" access="remote" output="false" returntype="any" returnformat="JSON"
+         039).          Line: 2140         cffunction name="displayTitledOwnerDriver" access="remote" output="false" returntype="any" returnformat="JSON"
+         040).          Line: 2160         cffunction name="showNewVehicleForm" access="remote" output="false" returntype="any" returnformat="JSON"
+         041).          Line: 2195         cffunction name="displayTruckBodyAgeStyle" access="remote" output="false" returntype="any" returnformat="JSON"
+         042).          Line: 2227         cffunction name="displayTruckOptionsUpdate" access="remote" output="false" returntype="any" returnformat="JSON"
+         043).          Line: 2272         cffunction name="displayTruckBodyAgeStyleEnter" access="remote" output="false" returntype="any" returnformat="JSON"
+         044).          Line: 2317         cffunction name="displayBulkImportUpload" access="remote" output="false" returntype="any" returnformat="JSON"
+         045).          Line: 2342         cffunction name="displayBulkImportResults" access="remote" output="false" returntype="any" returnformat="JSON"
+Scanned {2440} line(s), {92178} character(s), and found {45} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\agents\business\quote\bc\display.cfc} 
+         001).          Line: 0015         cffunction name="getPage" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         002).          Line: 0342         cffunction name="getLegalNameBlockHTML" access="remote" returnformat="JSON"
+         003).          Line: 0366         remote any function dropDownMultiRowAdd()
+         004).          Line: 0447         remote any function dropDownMultiRowDelete()
+         005).          Line: 0517         remote any function dropDownMultiHeaderLabel()
+         006).          Line: 0581         private any function SecureUtil()
+         007).          Line: 0585         private goodville.render.quote.businessRenderer function getRenderer()
+Scanned {595} line(s), {25241} character(s), and found {7} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {C:\source\cfmx\wwwroot\agents\business\quote\df\display.cfc} 
+         001).          Line: 0011         cffunction name="getPage" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         002).          Line: 0355         cffunction name="multirowAdd" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         003).          Line: 0496         cffunction name="multirowDelete" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         004).          Line: 0641         cffunction name="getLegalNameBlockHTML" access="remote" returnformat="JSON"
+         005).          Line: 0800         cffunction name="clickSwapMultirowAdd" access="remote" output="false" returntype="Struct" returnformat="JSON"
+         006).          Line: 0896         cffunction name="clickSwapMultirowDelete" access="remote" output="false" returntype="Struct" returnformat="JSON"
+         007).          Line: 0997         remote struct function getCASSremote()
+Scanned {1057} line(s), {40355} character(s), and found {7} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {C:\source\cfmx\wwwroot\agents\business\quote\farm\display.cfc} 
+         001).          Line: 0014         cffunction name="getDwellingCoverageManager" access="private" output="false" returnType="goodville.process.quote.farm.dwellingCoverageManager"
+         002).          Line: 0021         cffunction name="getCoverageManager" access="private" output="false" returnType="goodville.process.quote.farm.coverageManager"
+         003).          Line: 0029         cffunction name="getPage" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         004).          Line: 0373         cffunction name="multirowAdd" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         005).          Line: 0377         cffunction name="clickSwapMultirowAdd" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         006).          Line: 0530         cffunction name="multirowDelete" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         007).          Line: 0534         cffunction name="clickSwapMultirowDelete" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         008).          Line: 0708         cffunction name="getLegalNameBlockHTML" access="remote" returnformat="JSON"
+         009).          Line: 0730         private any function SecureUtil()
+         010).          Line: 0735         remote any function GenerateTableGroupRow()
+         011).          Line: 0807         remote any function getCASS ()
+         012).          Line: 0888         remote any function computeCoverageB()
+         013).          Line: 0955         remote any function computeCoverageC()
+         014).          Line: 1045         remote any function computeCoverageD()
+         015).          Line: 1115         remote any function FindTypeOfBuildingRatingType()
+         016).          Line: 1166         remote any function dropDownMultiRowAdd()
+         017).          Line: 1247         remote any function dropDownMultiRowDelete()
+         018).          Line: 1317         remote any function dropDownMultiHeaderLabel()
+         019).          Line: 1383         remote any function getFarmPersonalPropertyAdditionalSpecs()
+         020).          Line: 1438         remote any function getPersonalPropertyAdditionalSpecs()
+         021).          Line: 1496         remote any function DeleteLiabilityCoverageInsured()
+         022).          Line: 1556         remote any function GenerateLiabilityCoverageInsuredRow()
+         023).          Line: 1618         remote any function getQuoteLocationList()
+         024).          Line: 1670         remote any function getQuoteFarmProperies()
+         025).          Line: 1723         remote any function getSummaryPremium()
+         026).          Line: 1771         remote any function setFieldValues()
+         027).          Line: 1820         remote any function getDeductibleItems()
+         028).          Line: 1907         remote any function getLeftsideNotifications()
+Scanned {1967} line(s), {70079} character(s), and found {28} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {C:\source\cfmx\wwwroot\agents\business\quote\home\display.cfc} 
+         001).          Line: 0013         cffunction name="getPage" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         002).          Line: 0368         cffunction name="multrowPagination" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         003).          Line: 0431         cffunction name="multirowAdd" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         004).          Line: 0566         cffunction name="multirowDelete" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         005).          Line: 0707         cffunction name="getCASSremote" access="remote" output="false" returntype="any" returnformat="JSON"
+         006).          Line: 0793         cffunction name="setCoverageA" access="remote" output="false" returntype="any" returnformat="JSON"
+         007).          Line: 0800         cffunction name="setCoverageB" access="remote" output="false" returntype="any" returnformat="JSON"
+         008).          Line: 0810         cffunction name="setCoverageC" access="remote" output="false" returntype="any" returnformat="JSON"
+Scanned {823} line(s), {33733} character(s), and found {8} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\01-Basics.cfm} 
+Scanned {91} line(s), {2231} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Application.cfc} 
+         001).          Line: 0004         public any function onRequestStart()
+Scanned {8} line(s), {79} character(s), and found {1} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Barrett-Utils.cfc} 
+         001).          Line: 0007         public function sortArrOfStruct()
+         002).          Line: 0022         public function addArrayToXmlNode()
+         003).          Line: 0033         private function convertArrOfStructToXml()
+         004).          Line: 0061         public function convertXmlToArrOfStructs()
+         005).          Line: 0079         public function buildQueryString()
+         006).          Line: 0094         public function useHttpService()
+         007).          Line: 0108         private function searchArrOfStructs()
+         008).          Line: 0133         public function init()
+Scanned {139} line(s), {4157} character(s), and found {8} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\index.cfm} 
+Scanned {9} line(s), {96} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Code-Scanner\Code-Scanner.cfc} 
+         001).          Line: 0016         public function init()
+         002).          Line: 0022         public any function scan()
+         003).          Line: 0054         private any function scanFile()
+         004).          Line: 0089         private string function findFunction()
+         005).          Line: 0113         private void function displayHtml()
+Scanned {124} line(s), {4126} character(s), and found {5} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Code-Scanner\index.cfm} 
+Scanned {30} line(s), {974} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Intro-To-CF\01-Basics.cfm} 
+Scanned {91} line(s), {2231} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Intro-To-CF\02-Decisions-and-Loops.cfm} 
+Scanned {117} line(s), {2376} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Intro-To-CF\03-Functions-and-Components.cfm} 
+         001).          Line: 0005         cffunction name="getFullName" output="false" access="public" returnType="string"
+Scanned {25} line(s), {677} character(s), and found {1} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Intro-To-CF\04-Components.cfm} 
+Scanned {13} line(s), {308} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Intro-To-CF\Application.cfc} 
+Scanned {5} line(s), {38} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Intro-To-CF\Greeting.cfc} 
+         001).          Line: 0004         public string function getFullName()
+         002).          Line: 0009         public string function getGreeting ()
+Scanned {16} line(s), {367} character(s), and found {2} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Intro-To-CF\index.cfm} 
+Scanned {6} line(s), {49} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Testing\PentonAPI-Testing.cfm} 
+Scanned {56} line(s), {2380} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\agents\business\quote\ac\display.cfc} 
+         001).          Line: 0014         cffunction name="getPage" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         002).          Line: 0384         cffunction name="getDebitsCredits" access="remote" returnformat="JSON"
+         003).          Line: 0402         cffunction name="checkPublicMaxCapacity" access="remote" returnformat="JSON"
+         004).          Line: 0422         cffunction name="getLeftsideNotifications" access="remote" returntype="any" output="false" returnformat="JSON"
+         005).          Line: 0454         cffunction name="getVinEditForm" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         006).          Line: 0474         cffunction name="getSmartGroupsForm" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         007).          Line: 0490         cffunction name="createSmartGroup" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         008).          Line: 0516         cffunction name="updateSmartGroup" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         009).          Line: 0566         cffunction name="createVehicleGroup" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         010).          Line: 0607         cffunction name="displayAttachDriverFile" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         011).          Line: 0678         cffunction name="displayAttachVehicleFile" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         012).          Line: 0749         cffunction name="displayAttachDrVehicle" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         013).          Line: 0835         cffunction name="displayAttachVehDriver" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         014).          Line: 0864         cffunction name="changeVehicleCoverageGroup" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         015).          Line: 0908         cffunction name="displayVehicleCoverageGroup" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         016).          Line: 0926         cffunction name="createVehicleCoverageGroup" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         017).          Line: 0951         cffunction name="deleteSmartGroup" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         018).          Line: 0974         cffunction name="getGroupVehiclesDisplay" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         019).          Line: 0992         cffunction name="getGroupSettingsDisplay" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         020).          Line: 1010         cffunction name="getVinEditFormUW" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         021).          Line: 1031         cffunction name="getBodyStyleEditForm" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         022).          Line: 1053         cffunction name="getYMMEditForm" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         023).          Line: 1074         cffunction name="getVin" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         024).          Line: 1257         cffunction name="multirowAdd" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         025).          Line: 1397         cffunction name="multirowDelete" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         026).          Line: 1532         cffunction name="getLegalNameBlockHTML" access="remote" returnformat="JSON"
+         027).          Line: 1553         cffunction name="removeDriverVehicle" displayname="" access="remote" returnformat="JSON" output="false" returntype="any" hint=""
+         028).          Line: 1582         cffunction name="removeDriverVehicleType" displayname="" access="remote" returnformat="JSON" output="false" returntype="any" hint=""
+         029).          Line: 1610         cffunction name="deleteFile" displayname="" access="remote" returnformat="JSON" output="false" returntype="any" hint=""
+         030).          Line: 1637         cffunction name="deleteSMFile" displayname="" access="remote" returnformat="JSON" output="false" returntype="any" hint=""
+         031).          Line: 1668         cffunction name="clickSwapMultirowAdd" access="remote" output="false" returntype="Struct" returnformat="JSON"
+         032).          Line: 1757         cffunction name="clickSwapMultirowDelete" access="remote" output="false" returntype="Struct" returnformat="JSON"
+         033).          Line: 1849         cffunction name="ziplookup" displayname="" access="public" output="false" returntype="any" hint=""
+         034).          Line: 1853         cffunction name="AutoCompleteFilterListMultiSelectAdd" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         035).          Line: 1936         cffunction name="AutoCompleteFilterListMultiSelectRemove" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         036).          Line: 2018         cffunction name="getCASSremote" access="remote" output="false" returntype="any" returnformat="JSON"
+         037).          Line: 2103         cffunction name="displayAddDriverOptions" access="remote" output="false" returntype="any" returnformat="JSON"
+         038).          Line: 2120         cffunction name="displayNamedInsuredDriver" access="remote" output="false" returntype="any" returnformat="JSON"
+         039).          Line: 2140         cffunction name="displayTitledOwnerDriver" access="remote" output="false" returntype="any" returnformat="JSON"
+         040).          Line: 2160         cffunction name="showNewVehicleForm" access="remote" output="false" returntype="any" returnformat="JSON"
+         041).          Line: 2195         cffunction name="displayTruckBodyAgeStyle" access="remote" output="false" returntype="any" returnformat="JSON"
+         042).          Line: 2227         cffunction name="displayTruckOptionsUpdate" access="remote" output="false" returntype="any" returnformat="JSON"
+         043).          Line: 2272         cffunction name="displayTruckBodyAgeStyleEnter" access="remote" output="false" returntype="any" returnformat="JSON"
+         044).          Line: 2317         cffunction name="displayBulkImportUpload" access="remote" output="false" returntype="any" returnformat="JSON"
+         045).          Line: 2342         cffunction name="displayBulkImportResults" access="remote" output="false" returntype="any" returnformat="JSON"
+Scanned {2440} line(s), {92178} character(s), and found {45} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\agents\business\quote\bc\display.cfc} 
+         001).          Line: 0015         cffunction name="getPage" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         002).          Line: 0342         cffunction name="getLegalNameBlockHTML" access="remote" returnformat="JSON"
+         003).          Line: 0366         remote any function dropDownMultiRowAdd()
+         004).          Line: 0447         remote any function dropDownMultiRowDelete()
+         005).          Line: 0517         remote any function dropDownMultiHeaderLabel()
+         006).          Line: 0581         private any function SecureUtil()
+         007).          Line: 0585         private goodville.render.quote.businessRenderer function getRenderer()
+Scanned {595} line(s), {25241} character(s), and found {7} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {C:\source\cfmx\wwwroot\agents\business\quote\df\display.cfc} 
+         001).          Line: 0011         cffunction name="getPage" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         002).          Line: 0355         cffunction name="multirowAdd" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         003).          Line: 0496         cffunction name="multirowDelete" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         004).          Line: 0641         cffunction name="getLegalNameBlockHTML" access="remote" returnformat="JSON"
+         005).          Line: 0800         cffunction name="clickSwapMultirowAdd" access="remote" output="false" returntype="Struct" returnformat="JSON"
+         006).          Line: 0896         cffunction name="clickSwapMultirowDelete" access="remote" output="false" returntype="Struct" returnformat="JSON"
+         007).          Line: 0997         remote struct function getCASSremote()
+Scanned {1057} line(s), {40355} character(s), and found {7} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {C:\source\cfmx\wwwroot\agents\business\quote\farm\display.cfc} 
+         001).          Line: 0014         cffunction name="getDwellingCoverageManager" access="private" output="false" returnType="goodville.process.quote.farm.dwellingCoverageManager"
+         002).          Line: 0021         cffunction name="getCoverageManager" access="private" output="false" returnType="goodville.process.quote.farm.coverageManager"
+         003).          Line: 0029         cffunction name="getPage" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         004).          Line: 0373         cffunction name="multirowAdd" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         005).          Line: 0377         cffunction name="clickSwapMultirowAdd" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         006).          Line: 0530         cffunction name="multirowDelete" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         007).          Line: 0534         cffunction name="clickSwapMultirowDelete" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         008).          Line: 0708         cffunction name="getLegalNameBlockHTML" access="remote" returnformat="JSON"
+         009).          Line: 0730         private any function SecureUtil()
+         010).          Line: 0735         remote any function GenerateTableGroupRow()
+         011).          Line: 0807         remote any function getCASS ()
+         012).          Line: 0888         remote any function computeCoverageB()
+         013).          Line: 0955         remote any function computeCoverageC()
+         014).          Line: 1045         remote any function computeCoverageD()
+         015).          Line: 1115         remote any function FindTypeOfBuildingRatingType()
+         016).          Line: 1166         remote any function dropDownMultiRowAdd()
+         017).          Line: 1247         remote any function dropDownMultiRowDelete()
+         018).          Line: 1317         remote any function dropDownMultiHeaderLabel()
+         019).          Line: 1383         remote any function getFarmPersonalPropertyAdditionalSpecs()
+         020).          Line: 1438         remote any function getPersonalPropertyAdditionalSpecs()
+         021).          Line: 1496         remote any function DeleteLiabilityCoverageInsured()
+         022).          Line: 1556         remote any function GenerateLiabilityCoverageInsuredRow()
+         023).          Line: 1618         remote any function getQuoteLocationList()
+         024).          Line: 1670         remote any function getQuoteFarmProperies()
+         025).          Line: 1723         remote any function getSummaryPremium()
+         026).          Line: 1771         remote any function setFieldValues()
+         027).          Line: 1820         remote any function getDeductibleItems()
+         028).          Line: 1907         remote any function getLeftsideNotifications()
+Scanned {1967} line(s), {70079} character(s), and found {28} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {C:\source\cfmx\wwwroot\agents\business\quote\home\display.cfc} 
+         001).          Line: 0013         cffunction name="getPage" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         002).          Line: 0368         cffunction name="multrowPagination" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         003).          Line: 0431         cffunction name="multirowAdd" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         004).          Line: 0566         cffunction name="multirowDelete" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         005).          Line: 0707         cffunction name="getCASSremote" access="remote" output="false" returntype="any" returnformat="JSON"
+         006).          Line: 0793         cffunction name="setCoverageA" access="remote" output="false" returntype="any" returnformat="JSON"
+         007).          Line: 0800         cffunction name="setCoverageB" access="remote" output="false" returntype="any" returnformat="JSON"
+         008).          Line: 0810         cffunction name="setCoverageC" access="remote" output="false" returntype="any" returnformat="JSON"
+Scanned {823} line(s), {33733} character(s), and found {8} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {C:\source\cfmx\wwwroot\agents\business\quote\personalauto\display.cfc} 
+         001).          Line: 0013         cffunction name="getPage" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         002).          Line: 0533         cffunction name="getVin" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         003).          Line: 0717         cffunction name="checkMailingGaragedState" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         004).          Line: 0737         cffunction name="getBankName" displayname="" access="remote" output="false" returntype="string" hint="" returnformat="JSON"
+Scanned {769} line(s), {33299} character(s), and found {4} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\01-Basics.cfm} 
+Scanned {91} line(s), {2231} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Application.cfc} 
+         001).          Line: 0004         public any function onRequestStart()
+Scanned {8} line(s), {79} character(s), and found {1} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Barrett-Utils.cfc} 
+         001).          Line: 0007         public function sortArrOfStruct()
+         002).          Line: 0022         public function addArrayToXmlNode()
+         003).          Line: 0033         private function convertArrOfStructToXml()
+         004).          Line: 0061         public function convertXmlToArrOfStructs()
+         005).          Line: 0079         public function buildQueryString()
+         006).          Line: 0094         public function useHttpService()
+         007).          Line: 0108         private function searchArrOfStructs()
+         008).          Line: 0133         public function init()
+Scanned {139} line(s), {4157} character(s), and found {8} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\index.cfm} 
+Scanned {9} line(s), {96} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Code-Scanner\Code-Scanner.cfc} 
+         001).          Line: 0016         public function init()
+         002).          Line: 0022         public any function scan()
+         003).          Line: 0054         private any function scanFile()
+         004).          Line: 0089         private string function findFunction()
+         005).          Line: 0113         private void function displayHtml()
+Scanned {124} line(s), {4126} character(s), and found {5} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Code-Scanner\index.cfm} 
+Scanned {30} line(s), {974} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Intro-To-CF\01-Basics.cfm} 
+Scanned {91} line(s), {2231} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Intro-To-CF\02-Decisions-and-Loops.cfm} 
+Scanned {117} line(s), {2376} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Intro-To-CF\03-Functions-and-Components.cfm} 
+         001).          Line: 0005         cffunction name="getFullName" output="false" access="public" returnType="string"
+Scanned {25} line(s), {677} character(s), and found {1} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Intro-To-CF\04-Components.cfm} 
+Scanned {13} line(s), {308} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Intro-To-CF\Application.cfc} 
+Scanned {5} line(s), {38} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Intro-To-CF\Greeting.cfc} 
+         001).          Line: 0004         public string function getFullName()
+         002).          Line: 0009         public string function getGreeting ()
+Scanned {16} line(s), {367} character(s), and found {2} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Intro-To-CF\index.cfm} 
+Scanned {6} line(s), {49} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Testing\PentonAPI-Testing.cfm} 
+Scanned {56} line(s), {2380} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\agents\business\quote\ac\display.cfc} 
+         001).          Line: 0014         cffunction name="getPage" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         002).          Line: 0384         cffunction name="getDebitsCredits" access="remote" returnformat="JSON"
+         003).          Line: 0402         cffunction name="checkPublicMaxCapacity" access="remote" returnformat="JSON"
+         004).          Line: 0422         cffunction name="getLeftsideNotifications" access="remote" returntype="any" output="false" returnformat="JSON"
+         005).          Line: 0454         cffunction name="getVinEditForm" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         006).          Line: 0474         cffunction name="getSmartGroupsForm" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         007).          Line: 0490         cffunction name="createSmartGroup" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         008).          Line: 0516         cffunction name="updateSmartGroup" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         009).          Line: 0566         cffunction name="createVehicleGroup" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         010).          Line: 0607         cffunction name="displayAttachDriverFile" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         011).          Line: 0678         cffunction name="displayAttachVehicleFile" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         012).          Line: 0749         cffunction name="displayAttachDrVehicle" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         013).          Line: 0835         cffunction name="displayAttachVehDriver" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         014).          Line: 0864         cffunction name="changeVehicleCoverageGroup" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         015).          Line: 0908         cffunction name="displayVehicleCoverageGroup" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         016).          Line: 0926         cffunction name="createVehicleCoverageGroup" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         017).          Line: 0951         cffunction name="deleteSmartGroup" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         018).          Line: 0974         cffunction name="getGroupVehiclesDisplay" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         019).          Line: 0992         cffunction name="getGroupSettingsDisplay" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         020).          Line: 1010         cffunction name="getVinEditFormUW" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         021).          Line: 1031         cffunction name="getBodyStyleEditForm" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         022).          Line: 1053         cffunction name="getYMMEditForm" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         023).          Line: 1074         cffunction name="getVin" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         024).          Line: 1257         cffunction name="multirowAdd" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         025).          Line: 1397         cffunction name="multirowDelete" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         026).          Line: 1532         cffunction name="getLegalNameBlockHTML" access="remote" returnformat="JSON"
+         027).          Line: 1553         cffunction name="removeDriverVehicle" displayname="" access="remote" returnformat="JSON" output="false" returntype="any" hint=""
+         028).          Line: 1582         cffunction name="removeDriverVehicleType" displayname="" access="remote" returnformat="JSON" output="false" returntype="any" hint=""
+         029).          Line: 1610         cffunction name="deleteFile" displayname="" access="remote" returnformat="JSON" output="false" returntype="any" hint=""
+         030).          Line: 1637         cffunction name="deleteSMFile" displayname="" access="remote" returnformat="JSON" output="false" returntype="any" hint=""
+         031).          Line: 1668         cffunction name="clickSwapMultirowAdd" access="remote" output="false" returntype="Struct" returnformat="JSON"
+         032).          Line: 1757         cffunction name="clickSwapMultirowDelete" access="remote" output="false" returntype="Struct" returnformat="JSON"
+         033).          Line: 1849         cffunction name="ziplookup" displayname="" access="public" output="false" returntype="any" hint=""
+         034).          Line: 1853         cffunction name="AutoCompleteFilterListMultiSelectAdd" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         035).          Line: 1936         cffunction name="AutoCompleteFilterListMultiSelectRemove" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         036).          Line: 2018         cffunction name="getCASSremote" access="remote" output="false" returntype="any" returnformat="JSON"
+         037).          Line: 2103         cffunction name="displayAddDriverOptions" access="remote" output="false" returntype="any" returnformat="JSON"
+         038).          Line: 2120         cffunction name="displayNamedInsuredDriver" access="remote" output="false" returntype="any" returnformat="JSON"
+         039).          Line: 2140         cffunction name="displayTitledOwnerDriver" access="remote" output="false" returntype="any" returnformat="JSON"
+         040).          Line: 2160         cffunction name="showNewVehicleForm" access="remote" output="false" returntype="any" returnformat="JSON"
+         041).          Line: 2195         cffunction name="displayTruckBodyAgeStyle" access="remote" output="false" returntype="any" returnformat="JSON"
+         042).          Line: 2227         cffunction name="displayTruckOptionsUpdate" access="remote" output="false" returntype="any" returnformat="JSON"
+         043).          Line: 2272         cffunction name="displayTruckBodyAgeStyleEnter" access="remote" output="false" returntype="any" returnformat="JSON"
+         044).          Line: 2317         cffunction name="displayBulkImportUpload" access="remote" output="false" returntype="any" returnformat="JSON"
+         045).          Line: 2342         cffunction name="displayBulkImportResults" access="remote" output="false" returntype="any" returnformat="JSON"
+Scanned {2440} line(s), {92178} character(s), and found {45} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\agents\business\quote\bc\display.cfc} 
+         001).          Line: 0015         cffunction name="getPage" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         002).          Line: 0342         cffunction name="getLegalNameBlockHTML" access="remote" returnformat="JSON"
+         003).          Line: 0366         remote any function dropDownMultiRowAdd()
+         004).          Line: 0447         remote any function dropDownMultiRowDelete()
+         005).          Line: 0517         remote any function dropDownMultiHeaderLabel()
+         006).          Line: 0581         private any function SecureUtil()
+         007).          Line: 0585         private goodville.render.quote.businessRenderer function getRenderer()
+Scanned {595} line(s), {25241} character(s), and found {7} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {C:\source\cfmx\wwwroot\agents\business\quote\df\display.cfc} 
+         001).          Line: 0011         cffunction name="getPage" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         002).          Line: 0355         cffunction name="multirowAdd" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         003).          Line: 0496         cffunction name="multirowDelete" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         004).          Line: 0641         cffunction name="getLegalNameBlockHTML" access="remote" returnformat="JSON"
+         005).          Line: 0800         cffunction name="clickSwapMultirowAdd" access="remote" output="false" returntype="Struct" returnformat="JSON"
+         006).          Line: 0896         cffunction name="clickSwapMultirowDelete" access="remote" output="false" returntype="Struct" returnformat="JSON"
+         007).          Line: 0997         remote struct function getCASSremote()
+Scanned {1057} line(s), {40355} character(s), and found {7} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {C:\source\cfmx\wwwroot\agents\business\quote\farm\display.cfc} 
+         001).          Line: 0014         cffunction name="getDwellingCoverageManager" access="private" output="false" returnType="goodville.process.quote.farm.dwellingCoverageManager"
+         002).          Line: 0021         cffunction name="getCoverageManager" access="private" output="false" returnType="goodville.process.quote.farm.coverageManager"
+         003).          Line: 0029         cffunction name="getPage" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         004).          Line: 0373         cffunction name="multirowAdd" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         005).          Line: 0377         cffunction name="clickSwapMultirowAdd" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         006).          Line: 0530         cffunction name="multirowDelete" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         007).          Line: 0534         cffunction name="clickSwapMultirowDelete" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         008).          Line: 0708         cffunction name="getLegalNameBlockHTML" access="remote" returnformat="JSON"
+         009).          Line: 0730         private any function SecureUtil()
+         010).          Line: 0735         remote any function GenerateTableGroupRow()
+         011).          Line: 0807         remote any function getCASS ()
+         012).          Line: 0888         remote any function computeCoverageB()
+         013).          Line: 0955         remote any function computeCoverageC()
+         014).          Line: 1045         remote any function computeCoverageD()
+         015).          Line: 1115         remote any function FindTypeOfBuildingRatingType()
+         016).          Line: 1166         remote any function dropDownMultiRowAdd()
+         017).          Line: 1247         remote any function dropDownMultiRowDelete()
+         018).          Line: 1317         remote any function dropDownMultiHeaderLabel()
+         019).          Line: 1383         remote any function getFarmPersonalPropertyAdditionalSpecs()
+         020).          Line: 1438         remote any function getPersonalPropertyAdditionalSpecs()
+         021).          Line: 1496         remote any function DeleteLiabilityCoverageInsured()
+         022).          Line: 1556         remote any function GenerateLiabilityCoverageInsuredRow()
+         023).          Line: 1618         remote any function getQuoteLocationList()
+         024).          Line: 1670         remote any function getQuoteFarmProperies()
+         025).          Line: 1723         remote any function getSummaryPremium()
+         026).          Line: 1771         remote any function setFieldValues()
+         027).          Line: 1820         remote any function getDeductibleItems()
+         028).          Line: 1907         remote any function getLeftsideNotifications()
+Scanned {1967} line(s), {70079} character(s), and found {28} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {C:\source\cfmx\wwwroot\agents\business\quote\home\display.cfc} 
+         001).          Line: 0013         cffunction name="getPage" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         002).          Line: 0368         cffunction name="multrowPagination" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         003).          Line: 0431         cffunction name="multirowAdd" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         004).          Line: 0566         cffunction name="multirowDelete" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         005).          Line: 0707         cffunction name="getCASSremote" access="remote" output="false" returntype="any" returnformat="JSON"
+         006).          Line: 0793         cffunction name="setCoverageA" access="remote" output="false" returntype="any" returnformat="JSON"
+         007).          Line: 0800         cffunction name="setCoverageB" access="remote" output="false" returntype="any" returnformat="JSON"
+         008).          Line: 0810         cffunction name="setCoverageC" access="remote" output="false" returntype="any" returnformat="JSON"
+Scanned {823} line(s), {33733} character(s), and found {8} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {C:\source\cfmx\wwwroot\agents\business\quote\personalauto\display.cfc} 
+         001).          Line: 0013         cffunction name="getPage" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         002).          Line: 0533         cffunction name="getVin" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         003).          Line: 0717         cffunction name="checkMailingGaragedState" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         004).          Line: 0737         cffunction name="getBankName" displayname="" access="remote" output="false" returntype="string" hint="" returnformat="JSON"
+Scanned {769} line(s), {33299} character(s), and found {4} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {C:\source\cfmx\wwwroot\agents\business\quote\tc\display.cfc} 
+Scanned {7} line(s), {191} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\01-Basics.cfm} 
+Scanned {91} line(s), {2231} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Application.cfc} 
+         001).          Line: 0004         public any function onRequestStart()
+Scanned {8} line(s), {79} character(s), and found {1} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Barrett-Utils.cfc} 
+         001).          Line: 0007         public function sortArrOfStruct()
+         002).          Line: 0022         public function addArrayToXmlNode()
+         003).          Line: 0033         private function convertArrOfStructToXml()
+         004).          Line: 0061         public function convertXmlToArrOfStructs()
+         005).          Line: 0079         public function buildQueryString()
+         006).          Line: 0094         public function useHttpService()
+         007).          Line: 0108         private function searchArrOfStructs()
+         008).          Line: 0133         public function init()
+Scanned {139} line(s), {4157} character(s), and found {8} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\index.cfm} 
+Scanned {9} line(s), {96} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Code-Scanner\Code-Scanner.cfc} 
+         001).          Line: 0016         public function init()
+         002).          Line: 0022         public any function scan()
+         003).          Line: 0054         private any function scanFile()
+         004).          Line: 0089         private string function findFunction()
+         005).          Line: 0113         private void function displayHtml()
+Scanned {124} line(s), {4126} character(s), and found {5} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Code-Scanner\index.cfm} 
+Scanned {30} line(s), {974} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Intro-To-CF\01-Basics.cfm} 
+Scanned {91} line(s), {2231} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Intro-To-CF\02-Decisions-and-Loops.cfm} 
+Scanned {117} line(s), {2376} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Intro-To-CF\03-Functions-and-Components.cfm} 
+         001).          Line: 0005         cffunction name="getFullName" output="false" access="public" returnType="string"
+Scanned {25} line(s), {677} character(s), and found {1} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Intro-To-CF\04-Components.cfm} 
+Scanned {13} line(s), {308} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Intro-To-CF\Application.cfc} 
+Scanned {5} line(s), {38} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Intro-To-CF\Greeting.cfc} 
+         001).          Line: 0004         public string function getFullName()
+         002).          Line: 0009         public string function getGreeting ()
+Scanned {16} line(s), {367} character(s), and found {2} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Intro-To-CF\index.cfm} 
+Scanned {6} line(s), {49} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Testing\PentonAPI-Testing.cfm} 
+Scanned {56} line(s), {2380} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\agents\business\quote\ac\display.cfc} 
+         001).          Line: 0014         cffunction name="getPage" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         002).          Line: 0384         cffunction name="getDebitsCredits" access="remote" returnformat="JSON"
+         003).          Line: 0402         cffunction name="checkPublicMaxCapacity" access="remote" returnformat="JSON"
+         004).          Line: 0422         cffunction name="getLeftsideNotifications" access="remote" returntype="any" output="false" returnformat="JSON"
+         005).          Line: 0454         cffunction name="getVinEditForm" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         006).          Line: 0474         cffunction name="getSmartGroupsForm" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         007).          Line: 0490         cffunction name="createSmartGroup" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         008).          Line: 0516         cffunction name="updateSmartGroup" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         009).          Line: 0566         cffunction name="createVehicleGroup" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         010).          Line: 0607         cffunction name="displayAttachDriverFile" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         011).          Line: 0678         cffunction name="displayAttachVehicleFile" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         012).          Line: 0749         cffunction name="displayAttachDrVehicle" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         013).          Line: 0835         cffunction name="displayAttachVehDriver" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         014).          Line: 0864         cffunction name="changeVehicleCoverageGroup" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         015).          Line: 0908         cffunction name="displayVehicleCoverageGroup" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         016).          Line: 0926         cffunction name="createVehicleCoverageGroup" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         017).          Line: 0951         cffunction name="deleteSmartGroup" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         018).          Line: 0974         cffunction name="getGroupVehiclesDisplay" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         019).          Line: 0992         cffunction name="getGroupSettingsDisplay" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         020).          Line: 1010         cffunction name="getVinEditFormUW" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         021).          Line: 1031         cffunction name="getBodyStyleEditForm" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         022).          Line: 1053         cffunction name="getYMMEditForm" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         023).          Line: 1074         cffunction name="getVin" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         024).          Line: 1257         cffunction name="multirowAdd" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         025).          Line: 1397         cffunction name="multirowDelete" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         026).          Line: 1532         cffunction name="getLegalNameBlockHTML" access="remote" returnformat="JSON"
+         027).          Line: 1553         cffunction name="removeDriverVehicle" displayname="" access="remote" returnformat="JSON" output="false" returntype="any" hint=""
+         028).          Line: 1582         cffunction name="removeDriverVehicleType" displayname="" access="remote" returnformat="JSON" output="false" returntype="any" hint=""
+         029).          Line: 1610         cffunction name="deleteFile" displayname="" access="remote" returnformat="JSON" output="false" returntype="any" hint=""
+         030).          Line: 1637         cffunction name="deleteSMFile" displayname="" access="remote" returnformat="JSON" output="false" returntype="any" hint=""
+         031).          Line: 1668         cffunction name="clickSwapMultirowAdd" access="remote" output="false" returntype="Struct" returnformat="JSON"
+         032).          Line: 1757         cffunction name="clickSwapMultirowDelete" access="remote" output="false" returntype="Struct" returnformat="JSON"
+         033).          Line: 1849         cffunction name="ziplookup" displayname="" access="public" output="false" returntype="any" hint=""
+         034).          Line: 1853         cffunction name="AutoCompleteFilterListMultiSelectAdd" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         035).          Line: 1936         cffunction name="AutoCompleteFilterListMultiSelectRemove" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         036).          Line: 2018         cffunction name="getCASSremote" access="remote" output="false" returntype="any" returnformat="JSON"
+         037).          Line: 2103         cffunction name="displayAddDriverOptions" access="remote" output="false" returntype="any" returnformat="JSON"
+         038).          Line: 2120         cffunction name="displayNamedInsuredDriver" access="remote" output="false" returntype="any" returnformat="JSON"
+         039).          Line: 2140         cffunction name="displayTitledOwnerDriver" access="remote" output="false" returntype="any" returnformat="JSON"
+         040).          Line: 2160         cffunction name="showNewVehicleForm" access="remote" output="false" returntype="any" returnformat="JSON"
+         041).          Line: 2195         cffunction name="displayTruckBodyAgeStyle" access="remote" output="false" returntype="any" returnformat="JSON"
+         042).          Line: 2227         cffunction name="displayTruckOptionsUpdate" access="remote" output="false" returntype="any" returnformat="JSON"
+         043).          Line: 2272         cffunction name="displayTruckBodyAgeStyleEnter" access="remote" output="false" returntype="any" returnformat="JSON"
+         044).          Line: 2317         cffunction name="displayBulkImportUpload" access="remote" output="false" returntype="any" returnformat="JSON"
+         045).          Line: 2342         cffunction name="displayBulkImportResults" access="remote" output="false" returntype="any" returnformat="JSON"
+Scanned {2440} line(s), {92178} character(s), and found {45} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\agents\business\quote\bc\display.cfc} 
+         001).          Line: 0015         cffunction name="getPage" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         002).          Line: 0342         cffunction name="getLegalNameBlockHTML" access="remote" returnformat="JSON"
+         003).          Line: 0366         remote any function dropDownMultiRowAdd()
+         004).          Line: 0447         remote any function dropDownMultiRowDelete()
+         005).          Line: 0517         remote any function dropDownMultiHeaderLabel()
+         006).          Line: 0581         private any function SecureUtil()
+         007).          Line: 0585         private goodville.render.quote.businessRenderer function getRenderer()
+Scanned {595} line(s), {25241} character(s), and found {7} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {C:\source\cfmx\wwwroot\agents\business\quote\df\display.cfc} 
+         001).          Line: 0011         cffunction name="getPage" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         002).          Line: 0355         cffunction name="multirowAdd" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         003).          Line: 0496         cffunction name="multirowDelete" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         004).          Line: 0641         cffunction name="getLegalNameBlockHTML" access="remote" returnformat="JSON"
+         005).          Line: 0800         cffunction name="clickSwapMultirowAdd" access="remote" output="false" returntype="Struct" returnformat="JSON"
+         006).          Line: 0896         cffunction name="clickSwapMultirowDelete" access="remote" output="false" returntype="Struct" returnformat="JSON"
+         007).          Line: 0997         remote struct function getCASSremote()
+Scanned {1057} line(s), {40355} character(s), and found {7} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {C:\source\cfmx\wwwroot\agents\business\quote\farm\display.cfc} 
+         001).          Line: 0014         cffunction name="getDwellingCoverageManager" access="private" output="false" returnType="goodville.process.quote.farm.dwellingCoverageManager"
+         002).          Line: 0021         cffunction name="getCoverageManager" access="private" output="false" returnType="goodville.process.quote.farm.coverageManager"
+         003).          Line: 0029         cffunction name="getPage" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         004).          Line: 0373         cffunction name="multirowAdd" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         005).          Line: 0377         cffunction name="clickSwapMultirowAdd" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         006).          Line: 0530         cffunction name="multirowDelete" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         007).          Line: 0534         cffunction name="clickSwapMultirowDelete" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         008).          Line: 0708         cffunction name="getLegalNameBlockHTML" access="remote" returnformat="JSON"
+         009).          Line: 0730         private any function SecureUtil()
+         010).          Line: 0735         remote any function GenerateTableGroupRow()
+         011).          Line: 0807         remote any function getCASS ()
+         012).          Line: 0888         remote any function computeCoverageB()
+         013).          Line: 0955         remote any function computeCoverageC()
+         014).          Line: 1045         remote any function computeCoverageD()
+         015).          Line: 1115         remote any function FindTypeOfBuildingRatingType()
+         016).          Line: 1166         remote any function dropDownMultiRowAdd()
+         017).          Line: 1247         remote any function dropDownMultiRowDelete()
+         018).          Line: 1317         remote any function dropDownMultiHeaderLabel()
+         019).          Line: 1383         remote any function getFarmPersonalPropertyAdditionalSpecs()
+         020).          Line: 1438         remote any function getPersonalPropertyAdditionalSpecs()
+         021).          Line: 1496         remote any function DeleteLiabilityCoverageInsured()
+         022).          Line: 1556         remote any function GenerateLiabilityCoverageInsuredRow()
+         023).          Line: 1618         remote any function getQuoteLocationList()
+         024).          Line: 1670         remote any function getQuoteFarmProperies()
+         025).          Line: 1723         remote any function getSummaryPremium()
+         026).          Line: 1771         remote any function setFieldValues()
+         027).          Line: 1820         remote any function getDeductibleItems()
+         028).          Line: 1907         remote any function getLeftsideNotifications()
+Scanned {1967} line(s), {70079} character(s), and found {28} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {C:\source\cfmx\wwwroot\agents\business\quote\home\display.cfc} 
+         001).          Line: 0013         cffunction name="getPage" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         002).          Line: 0368         cffunction name="multrowPagination" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         003).          Line: 0431         cffunction name="multirowAdd" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         004).          Line: 0566         cffunction name="multirowDelete" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         005).          Line: 0707         cffunction name="getCASSremote" access="remote" output="false" returntype="any" returnformat="JSON"
+         006).          Line: 0793         cffunction name="setCoverageA" access="remote" output="false" returntype="any" returnformat="JSON"
+         007).          Line: 0800         cffunction name="setCoverageB" access="remote" output="false" returntype="any" returnformat="JSON"
+         008).          Line: 0810         cffunction name="setCoverageC" access="remote" output="false" returntype="any" returnformat="JSON"
+Scanned {823} line(s), {33733} character(s), and found {8} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {C:\source\cfmx\wwwroot\agents\business\quote\personalauto\display.cfc} 
+         001).          Line: 0013         cffunction name="getPage" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         002).          Line: 0533         cffunction name="getVin" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         003).          Line: 0717         cffunction name="checkMailingGaragedState" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         004).          Line: 0737         cffunction name="getBankName" displayname="" access="remote" output="false" returntype="string" hint="" returnformat="JSON"
+Scanned {769} line(s), {33299} character(s), and found {4} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {C:\source\cfmx\wwwroot\agents\business\quote\tc\display.cfc} 
+Scanned {7} line(s), {191} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {C:\source\cfmx\wwwroot\agents\business\quote\up\display.cfc} 
+         001).          Line: 0016         private struct function createResponse()
+         002).          Line: 0028         remote any function getPage()
+         003).          Line: 0273         remote struct function getPolicyQuoteData()
+         004).          Line: 0309         cffunction name="getLeftsideNotifications" access="remote" returntype="any" output="false" returnformat="JSON"
+         005).          Line: 0340         cffunction name="multirowAdd" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         006).          Line: 0480         cffunction name="multirowDelete" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         007).          Line: 0616         cffunction name="clickSwapMultirowAdd" access="remote" output="false" returntype="Struct" returnformat="JSON"
+         008).          Line: 0705         cffunction name="clickSwapMultirowDelete" access="remote" output="false" returntype="Struct" returnformat="JSON"
+         009).          Line: 0797         cffunction name="ziplookup" displayname="" access="public" output="false" returntype="any" hint=""
+         010).          Line: 0801         cffunction name="getCASSremote" access="remote" output="false" returntype="any" returnformat="JSON"
+Scanned {914} line(s), {33585} character(s), and found {10} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\01-Basics.cfm} 
+Scanned {91} line(s), {2231} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Application.cfc} 
+         001).          Line: 0004         public any function onRequestStart()
+Scanned {8} line(s), {79} character(s), and found {1} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Barrett-Utils.cfc} 
+         001).          Line: 0007         public function sortArrOfStruct()
+         002).          Line: 0022         public function addArrayToXmlNode()
+         003).          Line: 0033         private function convertArrOfStructToXml()
+         004).          Line: 0061         public function convertXmlToArrOfStructs()
+         005).          Line: 0079         public function buildQueryString()
+         006).          Line: 0094         public function useHttpService()
+         007).          Line: 0108         private function searchArrOfStructs()
+         008).          Line: 0133         public function init()
+Scanned {139} line(s), {4157} character(s), and found {8} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\index.cfm} 
+Scanned {9} line(s), {96} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Code-Scanner\Code-Scanner.cfc} 
+         001).          Line: 0016         public function init()
+         002).          Line: 0022         public any function scan()
+         003).          Line: 0054         private any function scanFile()
+         004).          Line: 0089         private string function findFunction()
+         005).          Line: 0113         private void function displayHtml()
+Scanned {124} line(s), {4126} character(s), and found {5} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Code-Scanner\index.cfm} 
+Scanned {30} line(s), {974} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Intro-To-CF\01-Basics.cfm} 
+Scanned {91} line(s), {2231} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Intro-To-CF\02-Decisions-and-Loops.cfm} 
+Scanned {117} line(s), {2376} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Intro-To-CF\03-Functions-and-Components.cfm} 
+         001).          Line: 0005         cffunction name="getFullName" output="false" access="public" returnType="string"
+Scanned {25} line(s), {677} character(s), and found {1} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Intro-To-CF\04-Components.cfm} 
+Scanned {13} line(s), {308} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Intro-To-CF\Application.cfc} 
+Scanned {5} line(s), {38} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Intro-To-CF\Greeting.cfc} 
+         001).          Line: 0004         public string function getFullName()
+         002).          Line: 0009         public string function getGreeting ()
+Scanned {16} line(s), {367} character(s), and found {2} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Intro-To-CF\index.cfm} 
+Scanned {6} line(s), {49} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\test\barrett\Testing\PentonAPI-Testing.cfm} 
+Scanned {56} line(s), {2380} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\agents\business\quote\ac\display.cfc} 
+         001).          Line: 0014         cffunction name="getPage" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         002).          Line: 0384         cffunction name="getDebitsCredits" access="remote" returnformat="JSON"
+         003).          Line: 0402         cffunction name="checkPublicMaxCapacity" access="remote" returnformat="JSON"
+         004).          Line: 0422         cffunction name="getLeftsideNotifications" access="remote" returntype="any" output="false" returnformat="JSON"
+         005).          Line: 0454         cffunction name="getVinEditForm" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         006).          Line: 0474         cffunction name="getSmartGroupsForm" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         007).          Line: 0490         cffunction name="createSmartGroup" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         008).          Line: 0516         cffunction name="updateSmartGroup" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         009).          Line: 0566         cffunction name="createVehicleGroup" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         010).          Line: 0607         cffunction name="displayAttachDriverFile" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         011).          Line: 0678         cffunction name="displayAttachVehicleFile" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         012).          Line: 0749         cffunction name="displayAttachDrVehicle" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         013).          Line: 0835         cffunction name="displayAttachVehDriver" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         014).          Line: 0864         cffunction name="changeVehicleCoverageGroup" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         015).          Line: 0908         cffunction name="displayVehicleCoverageGroup" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         016).          Line: 0926         cffunction name="createVehicleCoverageGroup" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         017).          Line: 0951         cffunction name="deleteSmartGroup" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         018).          Line: 0974         cffunction name="getGroupVehiclesDisplay" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         019).          Line: 0992         cffunction name="getGroupSettingsDisplay" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         020).          Line: 1010         cffunction name="getVinEditFormUW" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         021).          Line: 1031         cffunction name="getBodyStyleEditForm" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         022).          Line: 1053         cffunction name="getYMMEditForm" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         023).          Line: 1074         cffunction name="getVin" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         024).          Line: 1257         cffunction name="multirowAdd" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         025).          Line: 1397         cffunction name="multirowDelete" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         026).          Line: 1532         cffunction name="getLegalNameBlockHTML" access="remote" returnformat="JSON"
+         027).          Line: 1553         cffunction name="removeDriverVehicle" displayname="" access="remote" returnformat="JSON" output="false" returntype="any" hint=""
+         028).          Line: 1582         cffunction name="removeDriverVehicleType" displayname="" access="remote" returnformat="JSON" output="false" returntype="any" hint=""
+         029).          Line: 1610         cffunction name="deleteFile" displayname="" access="remote" returnformat="JSON" output="false" returntype="any" hint=""
+         030).          Line: 1637         cffunction name="deleteSMFile" displayname="" access="remote" returnformat="JSON" output="false" returntype="any" hint=""
+         031).          Line: 1668         cffunction name="clickSwapMultirowAdd" access="remote" output="false" returntype="Struct" returnformat="JSON"
+         032).          Line: 1757         cffunction name="clickSwapMultirowDelete" access="remote" output="false" returntype="Struct" returnformat="JSON"
+         033).          Line: 1849         cffunction name="ziplookup" displayname="" access="public" output="false" returntype="any" hint=""
+         034).          Line: 1853         cffunction name="AutoCompleteFilterListMultiSelectAdd" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         035).          Line: 1936         cffunction name="AutoCompleteFilterListMultiSelectRemove" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         036).          Line: 2018         cffunction name="getCASSremote" access="remote" output="false" returntype="any" returnformat="JSON"
+         037).          Line: 2103         cffunction name="displayAddDriverOptions" access="remote" output="false" returntype="any" returnformat="JSON"
+         038).          Line: 2120         cffunction name="displayNamedInsuredDriver" access="remote" output="false" returntype="any" returnformat="JSON"
+         039).          Line: 2140         cffunction name="displayTitledOwnerDriver" access="remote" output="false" returntype="any" returnformat="JSON"
+         040).          Line: 2160         cffunction name="showNewVehicleForm" access="remote" output="false" returntype="any" returnformat="JSON"
+         041).          Line: 2195         cffunction name="displayTruckBodyAgeStyle" access="remote" output="false" returntype="any" returnformat="JSON"
+         042).          Line: 2227         cffunction name="displayTruckOptionsUpdate" access="remote" output="false" returntype="any" returnformat="JSON"
+         043).          Line: 2272         cffunction name="displayTruckBodyAgeStyleEnter" access="remote" output="false" returntype="any" returnformat="JSON"
+         044).          Line: 2317         cffunction name="displayBulkImportUpload" access="remote" output="false" returntype="any" returnformat="JSON"
+         045).          Line: 2342         cffunction name="displayBulkImportResults" access="remote" output="false" returntype="any" returnformat="JSON"
+Scanned {2440} line(s), {92178} character(s), and found {45} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {c:\source\cfmx\wwwroot\agents\business\quote\bc\display.cfc} 
+         001).          Line: 0015         cffunction name="getPage" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         002).          Line: 0342         cffunction name="getLegalNameBlockHTML" access="remote" returnformat="JSON"
+         003).          Line: 0366         remote any function dropDownMultiRowAdd()
+         004).          Line: 0447         remote any function dropDownMultiRowDelete()
+         005).          Line: 0517         remote any function dropDownMultiHeaderLabel()
+         006).          Line: 0581         private any function SecureUtil()
+         007).          Line: 0585         private goodville.render.quote.businessRenderer function getRenderer()
+Scanned {595} line(s), {25241} character(s), and found {7} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {C:\source\cfmx\wwwroot\agents\business\quote\df\display.cfc} 
+         001).          Line: 0011         cffunction name="getPage" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         002).          Line: 0355         cffunction name="multirowAdd" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         003).          Line: 0496         cffunction name="multirowDelete" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         004).          Line: 0641         cffunction name="getLegalNameBlockHTML" access="remote" returnformat="JSON"
+         005).          Line: 0800         cffunction name="clickSwapMultirowAdd" access="remote" output="false" returntype="Struct" returnformat="JSON"
+         006).          Line: 0896         cffunction name="clickSwapMultirowDelete" access="remote" output="false" returntype="Struct" returnformat="JSON"
+         007).          Line: 0997         remote struct function getCASSremote()
+Scanned {1057} line(s), {40355} character(s), and found {7} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {C:\source\cfmx\wwwroot\agents\business\quote\farm\display.cfc} 
+         001).          Line: 0014         cffunction name="getDwellingCoverageManager" access="private" output="false" returnType="goodville.process.quote.farm.dwellingCoverageManager"
+         002).          Line: 0021         cffunction name="getCoverageManager" access="private" output="false" returnType="goodville.process.quote.farm.coverageManager"
+         003).          Line: 0029         cffunction name="getPage" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         004).          Line: 0373         cffunction name="multirowAdd" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         005).          Line: 0377         cffunction name="clickSwapMultirowAdd" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         006).          Line: 0530         cffunction name="multirowDelete" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         007).          Line: 0534         cffunction name="clickSwapMultirowDelete" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         008).          Line: 0708         cffunction name="getLegalNameBlockHTML" access="remote" returnformat="JSON"
+         009).          Line: 0730         private any function SecureUtil()
+         010).          Line: 0735         remote any function GenerateTableGroupRow()
+         011).          Line: 0807         remote any function getCASS ()
+         012).          Line: 0888         remote any function computeCoverageB()
+         013).          Line: 0955         remote any function computeCoverageC()
+         014).          Line: 1045         remote any function computeCoverageD()
+         015).          Line: 1115         remote any function FindTypeOfBuildingRatingType()
+         016).          Line: 1166         remote any function dropDownMultiRowAdd()
+         017).          Line: 1247         remote any function dropDownMultiRowDelete()
+         018).          Line: 1317         remote any function dropDownMultiHeaderLabel()
+         019).          Line: 1383         remote any function getFarmPersonalPropertyAdditionalSpecs()
+         020).          Line: 1438         remote any function getPersonalPropertyAdditionalSpecs()
+         021).          Line: 1496         remote any function DeleteLiabilityCoverageInsured()
+         022).          Line: 1556         remote any function GenerateLiabilityCoverageInsuredRow()
+         023).          Line: 1618         remote any function getQuoteLocationList()
+         024).          Line: 1670         remote any function getQuoteFarmProperies()
+         025).          Line: 1723         remote any function getSummaryPremium()
+         026).          Line: 1771         remote any function setFieldValues()
+         027).          Line: 1820         remote any function getDeductibleItems()
+         028).          Line: 1907         remote any function getLeftsideNotifications()
+Scanned {1967} line(s), {70079} character(s), and found {28} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {C:\source\cfmx\wwwroot\agents\business\quote\home\display.cfc} 
+         001).          Line: 0013         cffunction name="getPage" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         002).          Line: 0368         cffunction name="multrowPagination" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         003).          Line: 0431         cffunction name="multirowAdd" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         004).          Line: 0566         cffunction name="multirowDelete" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         005).          Line: 0707         cffunction name="getCASSremote" access="remote" output="false" returntype="any" returnformat="JSON"
+         006).          Line: 0793         cffunction name="setCoverageA" access="remote" output="false" returntype="any" returnformat="JSON"
+         007).          Line: 0800         cffunction name="setCoverageB" access="remote" output="false" returntype="any" returnformat="JSON"
+         008).          Line: 0810         cffunction name="setCoverageC" access="remote" output="false" returntype="any" returnformat="JSON"
+Scanned {823} line(s), {33733} character(s), and found {8} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {C:\source\cfmx\wwwroot\agents\business\quote\personalauto\display.cfc} 
+         001).          Line: 0013         cffunction name="getPage" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         002).          Line: 0533         cffunction name="getVin" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         003).          Line: 0717         cffunction name="checkMailingGaragedState" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         004).          Line: 0737         cffunction name="getBankName" displayname="" access="remote" output="false" returntype="string" hint="" returnformat="JSON"
+Scanned {769} line(s), {33299} character(s), and found {4} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {C:\source\cfmx\wwwroot\agents\business\quote\tc\display.cfc} 
+Scanned {7} line(s), {191} character(s), and found {0} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {C:\source\cfmx\wwwroot\agents\business\quote\up\display.cfc} 
+         001).          Line: 0016         private struct function createResponse()
+         002).          Line: 0028         remote any function getPage()
+         003).          Line: 0273         remote struct function getPolicyQuoteData()
+         004).          Line: 0309         cffunction name="getLeftsideNotifications" access="remote" returntype="any" output="false" returnformat="JSON"
+         005).          Line: 0340         cffunction name="multirowAdd" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         006).          Line: 0480         cffunction name="multirowDelete" displayname="" access="remote" output="false" returntype="any" hint="" returnformat="JSON"
+         007).          Line: 0616         cffunction name="clickSwapMultirowAdd" access="remote" output="false" returntype="Struct" returnformat="JSON"
+         008).          Line: 0705         cffunction name="clickSwapMultirowDelete" access="remote" output="false" returntype="Struct" returnformat="JSON"
+         009).          Line: 0797         cffunction name="ziplookup" displayname="" access="public" output="false" returntype="any" hint=""
+         010).          Line: 0801         cffunction name="getCASSremote" access="remote" output="false" returntype="any" returnformat="JSON"
+Scanned {914} line(s), {33585} character(s), and found {10} function(s).
+
+---------------------------------------------------------------------------
+
+Scanning {C:\source\cfmx\wwwroot\agents\business\quote\wc\display.cfc} 
+         001).          Line: 0016         private goodville.securityUtil function getSecureUtil()
+         002).          Line: 0023         private goodville.process.quote.quoteManager function getQuoteManager()
+         003).          Line: 0035         private goodville.process.quote.wc.workersCompManager function getManager()
+         004).          Line: 0048         private goodville.render.quote.wc.WorkersCompRenderer function getRenderer()
+         005).          Line: 0061         public goodville.process.utilityManager function getUtilityManager()
+         006).          Line: 0074         private void function processMessageOverrides()
+         007).          Line: 0128         private void function removeMessageOverrides()
+         008).          Line: 0153         remote any function getPage()
+         009).          Line: 0333         remote any function getLegalNameBlockHTML()
+         010).          Line: 0344         remote any function getCASS ()
+         011).          Line: 0409         remote any function setFieldValues()
+         012).          Line: 0458         remote struct function clickSwapMultirowAdd()
+         013).          Line: 0463         remote struct function multirowAdd()
+         014).          Line: 0473         remote struct function clickSwapMultirowDelete()
+         015).          Line: 0483         remote struct function multirowDelete()
+         016).          Line: 0501         private struct function clickSwapMultirowAction()
+         017).          Line: 0659         remote struct function getPolicyQuoteData()
+         018).          Line: 0696         remote any function dropDownMultiRowAdd()
+         019).          Line: 0775         remote any function dropDownMultiRowDelete()
+         020).          Line: 0845         remote any function dropDownMultiHeaderLabel()
+         021).          Line: 0909         private any function SecureUtil()
+Scanned {914} line(s), {29706} character(s), and found {21} function(s).
+
+---------------------------------------------------------------------------
+
