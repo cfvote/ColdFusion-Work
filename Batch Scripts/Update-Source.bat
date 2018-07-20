@@ -19,10 +19,10 @@ GOTO:UPDATE_SOURCE
 
 :UPDATE_SOURCE
     @ECHO ON
-    svn cleanup %SOURCE_PATH%/cfmx
-    svn update %SOURCE_PATH%/cfmx
-    svn cleanup %SOURCE_PATH%/java
-    svn update %SOURCE_PATH%/java
+    svn cleanup %SOURCE_PATH%\cfmx
+    svn update %SOURCE_PATH%\cfmx
+    svn cleanup %SOURCE_PATH%\java
+    svn update %SOURCE_PATH%\java
     XCOPY %SOURCE_PATH%\java\BuiltJARS\jars %CF_PATH%\lib\ /e /i /y /s /u
     XCOPY %SOURCE_PATH%\java\BuiltJARS\jars\properties\*.jar %CF_PATH%\lib\ /e /i /y /s /u 
     XCOPY %SOURCE_PATH%\java\JARS\CFDependencies %CF_PATH%\lib\ /e /i /y /s /u
