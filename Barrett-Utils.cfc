@@ -2,7 +2,13 @@ component displayName="Barretts Utils" hint="Some useful functions I've made at 
    
     /*  NOTE: A lot of these are modified from their original usage, not all have been tested since rewrite. */
 
+
+    public void function init(){
+        variables.newLine = Chr(13) & Chr(10);
+        variables.divider = repeatString("-", 75);
+    }
     
+
     /*  Sorts an array of structures by specified key*/
     public function sortArrOfStruct(arr, key, sortType, sortOrder, delimiter){
         var tmp = arrayNew(1);
@@ -15,6 +21,14 @@ component displayName="Barretts Utils" hint="Some useful functions I've made at 
             sorted.append(arr[tmp[j].Split(delimiter)[2]]);
         }
         return sorted;
+    }
+
+
+    public string function pow(required string base, required string power){
+        if(arguments.power == 0){
+            return 1;
+        } 
+        return arguments.base * pow(arguments.base, --arguments.power);
     }
 
 
@@ -116,6 +130,32 @@ component displayName="Barretts Utils" hint="Some useful functions I've made at 
     }
 
 
+    private string function stringifyStruct(required struct x){
+        local.out = '';
+        for(local.key in arguments.x){
+            local.out = local.out & local.key & ':' & arguments.x[local.key] & variables.newLine;
+        }
+        return local.out;
+    }
+
+
+    /* Display a string and replace specifed characters with html tags using options struct
+        options = {   '{': '<b>', '}': '</b>'  }; 
+    */
+    private void function displayStringHtml(required string output, required string delimiter, struct options){
+        local.htmlOut = output.split(arguments.delimiter);
+        for(local.piece in htmlOut){
+            for(local.o in arguments.options){
+                local.piece = replace(local.piece, local.o, arguments.options[local.o], 'all');
+            }
+            local.piece = replace(local.piece, ' ', '&nbsp;', 'all');
+            local.piece = replace(local.piece, variables.divider, '<hr />', 'all');
+            local.piece = replace(local.piece, variables.newLine, '<br />', 'all');
+            writeOutput("#local.piece#");   
+        }
+    }
+
+
 }
 
 
@@ -126,7 +166,7 @@ component displayName="Barretts Utils" hint="Some useful functions I've made at 
 
 /* Create config object for injection
     config = createobject('component','<>.config');
-    config.init(xmlparse(expandpath('/<>/<>.xml')));
+    config.init(xmlparse(expandpath('<>.xml')));
 */
 
 /* Component init -> dependency inject config file
