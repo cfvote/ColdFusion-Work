@@ -1,16 +1,16 @@
 # ColdFusion-Work
 Some CF utils and random testing files I've used in the process of upgrading/maintaining the legacy ColdFusion code. Also includes any other random CF program I've written at work.
 
-## File Descriptions
-
-* index.cfm --- landing page for my testing folder and any other temporary tests I might run
-* application.cfc --- component called by local CF server for my testing folder
-* Barrett-Utils.cfc --- useful functions that can be reused in other CF programs
-* Testing
-  * pentonAPI-test.http  --- Example using VSCode extension to perform HTTP Requests
-  * BinaryDecimalConverter.cfc --- A simple binary/decimal converter used in my introduction to mxunit testing
-  * BinaryDecimalTest.cfc --- My introduction to mxunit testing
-* Intro-To-CF --- Introductory CF, learning syntax, etc.
+## Files
+| **File Name**  | **Description** |
+| -------------- | --------------- |
+| Intro-To-CF/   | Directory of general syntax when I started learning CF | 
+| Testing/BinaryDecimalConverter.cfc | Simple binary/dec converter to use with my first mxunit test |
+| Testing/BinaryDecimalTest.cfc | My first mxunit test |
+| Testing/pentonAPI.http | Uses a VS code extension to perform HTTP requests with ease |
+| Application.cfc | Component called by local CF server for my personal folder |
+| index.cfm | Landing page for personal folder and any temp tests |
+| Barrett-Utils.cfc | Useful functions for reference and can be used in other programs |
 
 ## Useful Links and Answers
  * Learn CF In a Week http://www.learncfinaweek.com/
