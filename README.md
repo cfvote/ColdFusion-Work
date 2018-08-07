@@ -10,9 +10,6 @@ Some CF utils and random testing files I've used in the process of upgrading/mai
   * pentonAPI-test.http  --- Example using VSCode extension to perform HTTP Requests
   * BinaryDecimalConverter.cfc --- A simple binary/decimal converter used in my introduction to mxunit testing
   * BinaryDecimalTest.cfc --- My introduction to mxunit testing
-* Batch Scripts
-  * CF-Server.bat  --- Stops local CF server instance and then starts it
-  * Update-Source.bat -- Updates/Cleans CF and Java code using SVN. Moves Java jars to folder for local CF server
 * Intro-To-CF --- Introductory CF, learning syntax, etc.
 
 ## Useful Links and Answers
