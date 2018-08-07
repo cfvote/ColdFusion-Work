@@ -154,6 +154,19 @@ component displayName="Barretts Utils" hint="Some useful functions I've made at 
             writeOutput("#local.piece#");   
         }
     }
+    
+     private boolean function foundDuplicateId(required array struct, required string key){
+        if(arrayLen(struct) != 0){
+            for(var i = 1; i <= arrayLen(struct); i++){
+                for(var j = (i+1); j <= arrayLen(struct); j++){
+                    if(struct[i][key] == struct[j][key]){
+                        return true;
+                    }
+                }
+            }
+        }
+        return false;
+    }
 
 
 }
