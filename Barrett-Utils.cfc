@@ -1,13 +1,41 @@
-component displayName="Barretts Utils" hint="Some useful functions I've made at work that could be reused"{
+component displayName="Barretts Utils" hint="Some useful functions I've made at work that could be reused" {
    
-    /*  NOTE: A lot of these are modified from their original usage, not all have been tested since rewrite. */
+    /*  NOTE: A lot of these are modified from their original usage to strip out company information,
+            not all have been thoroughly tested since rewrite. 
+    */
 
 
     public void function init(){
         variables.newLine = Chr(13) & Chr(10);
         variables.divider = repeatString("-", 75);
     }
+
     
+    private void function jsonOutput(required any obj, boolean toConsole=false){
+        if(toConsole){
+            writeDump(deserializeJSON(serializeJSON(obj)), 'console');
+        } else{
+            writeDump(deserializeJSON(serializeJSON(obj)));
+        }
+    }
+
+
+    /*  Map web service json response to Java Bean with Jackson mapper(Java Object) and return bean array
+        classPath - Intended bean to map
+        jsonStr   - Serialized JSON string from web service response 
+    */
+    private array function jacksonMapBeans(required string classPath, required string jsonStr){
+        var beanArray = arrayNew(1);
+        var jsonArr = arrayNew(1);
+        var jacksonMapper = getJacksonMapper();
+        var class = createObject('java', 'java.lang.Class').forName(classPath);
+        jsonArr.append(deserializeJSON(jsonStr), true);
+        for(var i = 1; i <= arrayLen(jsonArr); i++){
+            beanArray.append(jacksonMapper.readValue(serializeJson(jsonArr[i]), class));
+        }
+        return beanArray;
+    }
+
 
     /*  Sorts an array of structures by specified key*/
     public function sortArrOfStruct(arr, key, sortType, sortOrder, delimiter){
@@ -101,20 +129,20 @@ component displayName="Barretts Utils" hint="Some useful functions I've made at 
     
 
     /* Send HTTP requests
-        var httpService = useHttpService(reqUrl, [{type='header' name='apiKey',
-            value=config.apiKey }, {type='body', name='ID', value=ID }], 'GET');
+        var httpService = makeHttpService('GET', reqUrl, [{type='header' name='apiKey',
+            value=config.apiKey }, {type='body', name='ID', value=ID }]);
         httpService.send().getPrefix().FileContent;
     */
-    public function useHttpService(reqUrl, params=[], method='GET'){
-        local.httpService = new http();
-        local.httpService.setTimeOut(450);
-        local.httpService.setCharset('utf-8');
-        local.httpService.setMethod(method);
-        local.httpService.setUrl(reqUrl);
+    private http function makeHttpService(required string method, required string reqUrl, array params=[]){
+        var httpService = new http();
+        httpService.setTimeOut(450);
+        httpService.setCharset('utf-8');
+        httpService.setMethod(method);
+        httpService.setUrl(reqUrl);
         for(var i = 1; i <= arrayLen(params); i++){
-            local.httpService.addParam(type=params[i].type, name=params[i].name, value=params[i].value);
+            httpService.addParam(type=params[i].type, name=params[i].name, value=params[i].value);
         }
-        return local.httpService;
+        return httpService;
     }
 
 
@@ -172,6 +200,8 @@ component displayName="Barretts Utils" hint="Some useful functions I've made at 
 }
 
 
+//               Misc. Snippets
+
 /*  Try/Catch Email Error Snippet:
     try{ var i = 5 / 0; } 
     catch(any e){ sendGatewayMessage('errorHandler', {e='Something.cfc failed line #', m=e}); } 
@@ -188,4 +218,3 @@ component displayName="Barretts Utils" hint="Some useful functions I've made at 
         return this;
     }
 */
-
