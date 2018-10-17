@@ -9,6 +9,14 @@ component displayName="Barretts Utils" hint="Some useful functions I've made at 
         variables.newLine = Chr(13) & Chr(10);
         variables.divider = repeatString("-", 75);
     }
+    
+    private void function classNameOutput(required any obj, boolean toConsole=true){
+        if(toConsole){
+            writeDump(getMetadata(obj).getName(), 'console');
+        } else{
+            writeDump(getMetadata(obj).getName());
+        }
+    }
 
     
     private void function jsonOutput(required any obj, boolean toConsole=false){
