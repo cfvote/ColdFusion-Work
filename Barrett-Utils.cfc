@@ -4,10 +4,13 @@ component displayName="Barretts Utils" hint="Some useful functions I've made at 
             not all have been thoroughly tested since rewrite. 
     */
 
-
     public void function init(){
         variables.newLine = Chr(13) & Chr(10);
         variables.divider = repeatString("-", 75);
+    }
+    
+    private void function getThisCFName(){
+        return listFirst(listLast(getMetadata(this).path, "\\"), ".");
     }
     
     private void function classNameOutput(required any obj, boolean toConsole=true){
@@ -18,7 +21,6 @@ component displayName="Barretts Utils" hint="Some useful functions I've made at 
         }
     }
 
-    
     private void function jsonOutput(required any obj, boolean toConsole=false){
         if(toConsole){
             writeDump(deserializeJSON(serializeJSON(obj)), 'console');
@@ -26,7 +28,6 @@ component displayName="Barretts Utils" hint="Some useful functions I've made at 
             writeDump(deserializeJSON(serializeJSON(obj)));
         }
     }
-
 
     /*  Map web service json response to Java Bean with Jackson mapper(Java Object) and return bean array
         classPath - Intended bean to map
@@ -44,7 +45,6 @@ component displayName="Barretts Utils" hint="Some useful functions I've made at 
         return beanArray;
     }
 
-
     /*  Sorts an array of structures by specified key*/
     public function sortArrOfStruct(arr, key, sortType, sortOrder, delimiter){
         var tmp = arrayNew(1);
@@ -59,14 +59,12 @@ component displayName="Barretts Utils" hint="Some useful functions I've made at 
         return sorted;
     }
 
-
     public string function pow(required string base, required string power){
         if(arguments.power == 0){
             return 1;
         } 
         return arguments.base * pow(arguments.base, --arguments.power);
     }
-
 
     /*Add a simple array to an xml node, expects simple types*/
     public function addArrayToXmlNode(arr, rootNode, parentNode, childName, value){
@@ -75,7 +73,6 @@ component displayName="Barretts Utils" hint="Some useful functions I've made at 
             parentNode.XmlChildren[i].XmlText = arr[i].find(value);
         }
     }
-
 
     /*  Creates an xml doc with an array of structs converted to a single xml node with children
         convertArrOfStructToXml(arrOfStruct, 'response', 'vehicles', vehicle', {'_id': 'ID', 'config': 'style'}); 
@@ -104,7 +101,6 @@ component displayName="Barretts Utils" hint="Some useful functions I've made at 
         return myDoc;
     }
 
-
     /* Convert Xml to array of structs based on keyPairs struct given
         convertXmlToArrOfStructs(myXmlDoc, 'Vehicles', 'Vehicle', {'employeeID': 'ID', 'testAmount':'amount'});
     */
@@ -121,7 +117,6 @@ component displayName="Barretts Utils" hint="Some useful functions I've made at 
         return arr;
     }
 
-
     /*  Builds a query string based on parameters for a URL
         buildQueryString({'param1':'1234', 'param2':'', 'param3':'qwerty'}, 'http://test.com/');
         http://test.com/?param1=1234&param3=qwerty
@@ -135,7 +130,6 @@ component displayName="Barretts Utils" hint="Some useful functions I've made at 
         return url;
     }
     
-
     /* Send HTTP requests
         var httpService = makeHttpService('GET', reqUrl, [{type='header' name='apiKey',
             value=config.apiKey }, {type='body', name='ID', value=ID }]);
@@ -153,7 +147,6 @@ component displayName="Barretts Utils" hint="Some useful functions I've made at 
         return httpService;
     }
 
-
     /*Search array of structs for a key, only goes one layer deep in the structs*/
     private function searchArrOfStructs(required array arrOfStruct, required string key){
         var index = ArrayFind(arrOfStruct.config.specs, function(s){
@@ -165,7 +158,6 @@ component displayName="Barretts Utils" hint="Some useful functions I've made at 
         return '';
     }
 
-
     private string function stringifyStruct(required struct x){
         local.out = '';
         for(local.key in arguments.x){
@@ -173,7 +165,6 @@ component displayName="Barretts Utils" hint="Some useful functions I've made at 
         }
         return local.out;
     }
-
 
     /* Display a string and replace specifed characters with html tags using options struct
         options = {   '{': '<b>', '}': '</b>'  }; 
@@ -203,8 +194,6 @@ component displayName="Barretts Utils" hint="Some useful functions I've made at 
         }
         return false;
     }
-
-
 }
 
 
