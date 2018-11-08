@@ -1,49 +1,124 @@
 component displayName="Barretts Utils" hint="Some useful functions I've made at work that could be reused" {
    
     /*  NOTE: A lot of these are modified from their original usage to strip out company information,
-            not all have been thoroughly tested since rewrite. 
+            not all have been thoroughly tested since rewrite or even look pretty. 
     */
 
+
     public void function init(){
+        //Convenience variables
         variables.newLine = Chr(13) & Chr(10);
         variables.divider = repeatString("-", 75);
     }
-    
-    private void function getThisCFName(){
-        return listFirst(listLast(getMetadata(this).path, "\\"), ".");
+
+
+    public void function errorHandler(
+        required any cfcatch, string type="information",
+        string file="#listFirst(listLast(getMetadata(this).path, "\\"), ".")#",
+        boolean sendEmail=true, boolean writeToLog=true)
+    {
+        if(sendEmail){
+            sendGatewayMessage('errorHandler', cfcatch);
+        }
+        if(writeToLog){
+            writeLog(text=cfcatch, type=type, file=file);
+        }
+	}
+
+
+    /* Returns query converted to array - Each row is an array element */
+    public array function queryToArray(required Query query){
+		local.arr = arrayNew(1);
+		for(local.row in arguments.query){
+			local.arr.append(local.row);
+		}
+		return local.arr;
+    }
+
+
+    /* Return query as an array of structs */
+    public struct function queryToArrOfStructs(required Query qu){
+        var arr = arrayNew(1);
+        var cols = listToArray(qu.columnlist);
+        for(var row = 1; row <= qu.recordcount; row++){
+            currentRow = structnew();
+            for(var col = 1; col <= arrayLen(cols); col++){
+                currentRow[cols[col]] = query[cols[col]][row];
+            }
+            arr.append(duplicate(currentRow));
+        }
+        return(arr);
+    }
+
+
+    /* Return a CF Component's name, defaults to current object
+        test\somedir\barrett\test.cfc -> [test,somdir,barrett,test.cfc] -> [test,cfc] -> test 
+    */
+    public string function getComponentName(any obj){
+        if(!isDefined('arguments.obj')){
+            arguments.obj = this;
+        }
+        return listFirst(listLast(getMetadata(arguments.obj).path, "\\"), ".");
     }
     
-    private void function classNameOutput(required any obj, boolean toConsole=true){
-        if(toConsole){
-            writeDump(getMetadata(obj).getName(), 'console');
+
+    /* Simply return object's name according to CF metadata */
+    public void function classNameOutput(any obj, boolean toConsole=false){
+        if(!isDefined('arguments.obj')){
+            arguments.obj = this;
+        }
+        if(arguments.toConsole){
+            writeDump(getMetadata(arguments.obj).getName(), 'console');
         } else{
-            writeDump(getMetadata(obj).getName());
+            writeDump(getMetadata(arguments.obj).getName());
         }
     }
 
-    private void function jsonOutput(required any obj, boolean toConsole=false){
-        if(toConsole){
-            writeDump(deserializeJSON(serializeJSON(obj)), 'console');
-        } else{
-            writeDump(deserializeJSON(serializeJSON(obj)));
+
+    /* WriteDump object as JSON */
+    public void function jsonOutput(required any obj, boolean toConsole=false){
+        try{
+            if(arguments.toConsole){
+                writeDump(deserializeJSON(serializeJSON(arguments.obj)), 'console');
+            } else{
+                writeDump(deserializeJSON(serializeJSON(arguments.obj)));
+            }
+        } catch(any cfcatch){
+            sendGatewayMessage('errorHandler', cfcatch);
         }
     }
+
+
+    /* WriteDump object as XML */
+    public void function xmlOutput(required any obj, boolean toConsole=false){
+        try{
+            if(toConsole){
+                writeDump(deserializeXML(serializeXML(obj)), 'console');
+            } else{
+                writeDump(deserializeXML(serializeXML(obj)));
+            }
+        catch(any cfcatch){
+            sendGatewayMessage('errorHandler', cfcatch);
+        }
+    }
+
 
     /*  Map web service json response to Java Bean with Jackson mapper(Java Object) and return bean array
         classPath - Intended bean to map
         jsonStr   - Serialized JSON string from web service response 
     */
-    private array function jacksonMapBeans(required string classPath, required string jsonStr){
+    public array function jacksonMapBeans(required string classPath, required string jsonStr){
         var beanArray = arrayNew(1);
         var jsonArr = arrayNew(1);
         var jacksonMapper = getJacksonMapper();
         var class = createObject('java', 'java.lang.Class').forName(classPath);
         jsonArr.append(deserializeJSON(jsonStr), true);
         for(var i = 1; i <= arrayLen(jsonArr); i++){
-            beanArray.append(jacksonMapper.readValue(serializeJson(jsonArr[i]), class));
+            beanArray.append(jacksonMapper.readValue(serializeJSON(jsonArr[i]), class));
         }
         return beanArray;
     }
+
 
     /*  Sorts an array of structures by specified key*/
     public function sortArrOfStruct(arr, key, sortType, sortOrder, delimiter){
@@ -59,31 +134,36 @@ component displayName="Barretts Utils" hint="Some useful functions I've made at 
         return sorted;
     }
 
-    public string function pow(required string base, required string power){
+
+    /* Recursive power function*/
+    public numeric function pow(required numeric base, required numeric power){
         if(arguments.power == 0){
             return 1;
         } 
         return arguments.base * pow(arguments.base, --arguments.power);
     }
 
-    /*Add a simple array to an xml node, expects simple types*/
-    public function addArrayToXmlNode(arr, rootNode, parentNode, childName, value){
+
+    /* Add a simple array to an xml node, expects simple types */
+    public any function addArrayToXmlNode(arr, rootNode, parentNode, childName, value){
         for(var i = 1; arrayLen(arr) > 0 && i <= arrayLen(arr); i++){
-            parentNode.XmlChildren[i] = XmlElemNew(rootNode, childName);
+            parentNode.XmlChildren[i] = xmlElemNew(rootNode, childName);
             parentNode.XmlChildren[i].XmlText = arr[i].find(value);
         }
+        return parentNode;
     }
 
+
     /*  Creates an xml doc with an array of structs converted to a single xml node with children
-        convertArrOfStructToXml(arrOfStruct, 'response', 'vehicles', vehicle', {'_id': 'ID', 'config': 'style'}); 
+        arrayOfStructsToXml(arrOfStruct, 'response', 'vehicles', vehicle', {'_id': 'ID', 'config': 'style'}); 
     */
-    private function convertArrOfStructToXml(arrOfStruct, docName, nodeName, childName, keyAdjustments = {}){
-        var myDoc = XmlNew();
-        myDoc.xmlRoot = XmlElemNew(myDoc, docName);
+    public any function arrayOfStructsToXml(arrOfStruct, docName, nodeName, childName, keyAdjustments = {}){
+        var myDoc = xmlNew();
+        myDoc.xmlRoot = xmlElemNew(myDoc, docName);
         myDoc.docName.XmlChildren[1] = XmlElemNew(myDoc, nodeName);
 
         for(var i = 1; i <= arrayLen(arrOfStruct); i++){
-            myDoc.response.nodeName.XmlChildren[i] = XmlElemNew(myDoc, childName);
+            myDoc.response.nodeName.XmlChildren[i] = xmlElemNew(myDoc, childName);
             var j = 1;
             for(var key in arrOfStruct[i]){
                 for(var adjustment in keyAdjustments){
@@ -91,8 +171,8 @@ component displayName="Barretts Utils" hint="Some useful functions I've made at 
                         key = adjustment;
                     }
                 }
-                myDoc.docName.nodeName.xmlChildren[i].xmlChildren[j] = XmlElemNew(myDoc, key);
-                if(!IsArray(arrOfStruct[i][key])){
+                myDoc.docName.nodeName.xmlChildren[i].xmlChildren[j] = xmlElemNew(myDoc, key);
+                if(!isArray(arrOfStruct[i][key])){
                     myDoc.docName.nodeName.xmlChildren[i].xmlChildren[j].XmlText = arrOfStruct[i][key];
                 }
                 j++;
@@ -101,10 +181,11 @@ component displayName="Barretts Utils" hint="Some useful functions I've made at 
         return myDoc;
     }
 
+
     /* Convert Xml to array of structs based on keyPairs struct given
-        convertXmlToArrOfStructs(myXmlDoc, 'Vehicles', 'Vehicle', {'employeeID': 'ID', 'testAmount':'amount'});
+        xmlToArrayOfStructs(myXmlDoc, 'Vehicles', 'Vehicle', {'employeeID': 'ID', 'testAmount':'amount'});
     */
-    public function convertXmlToArrOfStructs(xml, arrName, elemName, keyPairs){
+    public array function xmlToArrayOfStructs(xml, arrName, elemName, keyPairs){
         var arr = arrayNew(1);
         var elements = xmlSearch(dom, '//*:' & arrName & '/*:' & elemName);
         for(var i = 1; i <= arrayLen(elements); i++){
@@ -117,25 +198,27 @@ component displayName="Barretts Utils" hint="Some useful functions I've made at 
         return arr;
     }
 
+
     /*  Builds a query string based on parameters for a URL
         buildQueryString({'param1':'1234', 'param2':'', 'param3':'qwerty'}, 'http://test.com/');
         http://test.com/?param1=1234&param3=qwerty
     */
-    public function buildQueryString(queryParams = '', url = ''){
+    public string function buildQueryString(queryParams = '', url = ''){
         for(var key in queryParams){
-            if(queryParams[key] NEQ ''){
-                url = url & ((url EQ '') ? '?' & key & '=' & queryParams[key] : '&' & key & '=' & queryParams[key]);
+            if(queryParams[key] != ''){
+                url &= ((url == '') ? '?' & key & '=' & queryParams[key] : '&' & key & '=' & queryParams[key]);
             }
         }
         return url;
     }
     
+
     /* Send HTTP requests
         var httpService = makeHttpService('GET', reqUrl, [{type='header' name='apiKey',
             value=config.apiKey }, {type='body', name='ID', value=ID }]);
         httpService.send().getPrefix().FileContent;
     */
-    private http function makeHttpService(required string method, required string reqUrl, array params=[]){
+    public http function makeHttpService(required string method, required string reqUrl, array params=[]){
         var httpService = new http();
         httpService.setTimeOut(450);
         httpService.setCharset('utf-8');
@@ -147,29 +230,32 @@ component displayName="Barretts Utils" hint="Some useful functions I've made at 
         return httpService;
     }
 
-    /*Search array of structs for a key, only goes one layer deep in the structs*/
-    private function searchArrOfStructs(required array arrOfStruct, required string key){
-        var index = ArrayFind(arrOfStruct.config.specs, function(s){
+
+    /* Search array of structs for a key, only goes one layer deep in the structs */
+    public any function searchArrOfStructs(required array arrOfStruct, required string key){
+        local.index = arrayFind(arguments.arrOfStruct.config.specs, function(s){
             return s.key == key;
         });
-        if(index > 0 && StructKeyExists(arrOfStruct[index], key)){
-            return arrOfStruct[index][key];
+        if(local.index > 0 && structKeyExists(arguments.arrOfStruct[local.index], arguments.key)){
+            return arguments.arrOfStruct[local.index][arguments.key];
         }
         return '';
     }
 
-    private string function stringifyStruct(required struct x){
+    /* Simple struct toString() */
+    public string function stringifyStruct(required struct x){
         local.out = '';
         for(local.key in arguments.x){
-            local.out = local.out & local.key & ':' & arguments.x[local.key] & variables.newLine;
+            local.out &= local.key & ':' & arguments.x[local.key] & variables.newLine;
         }
         return local.out;
     }
 
+
     /* Display a string and replace specifed characters with html tags using options struct
         options = {   '{': '<b>', '}': '</b>'  }; 
     */
-    private void function displayStringHtml(required string output, required string delimiter, struct options){
+    public void function displayStringHtml(required string output, required string delimiter, struct options){
         local.htmlOut = output.split(arguments.delimiter);
         for(local.piece in htmlOut){
             for(local.o in arguments.options){
@@ -182,36 +268,20 @@ component displayName="Barretts Utils" hint="Some useful functions I've made at 
         }
     }
     
-     private boolean function foundDuplicateId(required array struct, required string key){
-        if(arrayLen(struct) != 0){
-            for(var i = 1; i <= arrayLen(struct); i++){
-                for(var j = (i+1); j <= arrayLen(struct); j++){
-                    if(struct[i][key] == struct[j][key]){
+
+    /* Find duplicate id according to key in an array of structs */
+    public boolean function foundDuplicateId(required array structArr, required string key){
+        for(var i = 1; i <= arrayLen(structArr); i++){
+            for(var j = (i+1); j <= arrayLen(structArr); j++){
+                if(arrayIsDefined(structArr, i) && arrayIsDefined(structArr, j)){
+                    if(structKeyExists(structArr[i], key) && structKeyExists(structArr[j], key) && structArr[i][key] == structArr[j][key]){
                         return true;
-                    }
+                    }   
+                } else{
+                    break;
                 }
             }
         }
         return false;
     }
 }
-
-
-//               Misc. Snippets
-
-/*  Try/Catch Email Error Snippet:
-    try{ var i = 5 / 0; } 
-    catch(any e){ sendGatewayMessage('errorHandler', {e='Something.cfc failed line #', m=e}); } 
-*/
-
-/* Create config object for injection
-    config = createobject('component','<>.config');
-    config.init(xmlparse(expandpath('<>.xml')));
-*/
-
-/* Component init -> dependency inject config file
-    public function init(required <>.config config){
-        //setup things in variables scope if needed...
-        return this;
-    }
-*/
