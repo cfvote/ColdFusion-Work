@@ -12,6 +12,69 @@ component displayName="Barretts Utils" hint="Some useful functions I've made at 
     }
 
 
+    /* Return simple HTML table string from database query results */
+    public string function queryResultAsHtmlTable(required Query q, required struct classes){
+        var outHTML = '';
+        var result = arguments.q.getResult();
+        savecontent variable = 'outHTML'{
+            if(isDefined('result') && result.recordCount > 0){
+                writeOutput('<div class="#arguments.classes.divWrapper#"><table class="#arguments.classes.table#"> 
+                    <thead class="#arguments.classes.thead#"><tr class="#arguments.classes.tr#">');
+                for(var col in result.columnlist){
+                    writeOutput('<th class="#arguments.classes.th#">');
+                }
+                writeOutput('</tr></thead><tbody class="#arguments.classes.tbody#">');
+                for(var row in result){
+                    writeOutput('<tr class="#arguments.classes.tr#">');
+                    for(var val in row){
+                        writeOutput('<td class="#arguments.classes.td#">#val#</td>');
+                    }
+                    writeOutput('</tr>');
+                }
+                writeOutput('</tbody></div>');
+            } else{
+                writeOutput('<p>Table not generated. Query had no results.</p>');
+            }
+        }
+        return outHTML;
+    }
+
+
+    /* Execute a database query and return result (More of a reference to syntax than an actual utility) */
+    public Query function executeDbQuery(required string dataSrc, required string sql, array params){
+        var result = '';
+        var q = new Query();
+        q.setDataSource(arguments.dataSrc);
+        for(var param in arguments.params){
+            q.addParam(name='#param.colName#', value='#param.value#', cfsqltype='#param.cfsqltype#');
+        }
+        try{
+            result = q.execute(sql='#arguments.sql#');
+        } catch(any e){
+            errorHandler(e);
+        }
+        return result; 
+    }
+
+
+    /* Execute stored procedure from data source with an array of param structs (More of a reference to syntax than an actual utility) */
+    public void function executeStoredProc(required string procName, required string dataSrc, array params){
+        var response = '';
+        try{
+            cfstoredproc(procedure="#procName#", datasource="#dataSrc#"){
+                cfprocresult(name="response");
+                for(var param in params){
+                    cfprocparam(cfsqltype="#param.cfsqltype#", value="#param.value#", dbvarname="#param.colName#");
+                }
+            }
+        } catch(any e){
+            errorHandler(e);
+        }
+        return response;
+    }
+
+
+    /* Write error to log file and/or send to error inbox */
     public void function errorHandler(
         required any cfcatch, string type="information",
         string file="#listFirst(listLast(getMetadata(this).path, "\\"), ".")#",
@@ -27,9 +90,9 @@ component displayName="Barretts Utils" hint="Some useful functions I've made at 
 
 
     /* Returns query converted to array - Each row is an array element */
-    public array function queryToArray(required Query query){
+    public array function queryToArray(required Query q){
 		local.arr = arrayNew(1);
-		for(local.row in arguments.query){
+		for(local.row in arguments.q){
 			local.arr.append(local.row);
 		}
 		return local.arr;
@@ -37,15 +100,15 @@ component displayName="Barretts Utils" hint="Some useful functions I've made at 
 
 
     /* Return query as an array of structs */
-    public struct function queryToArrOfStructs(required Query qu){
+    public struct function queryToArrOfStructs(required Query q){
         var arr = arrayNew(1);
-        var cols = listToArray(qu.columnlist);
-        for(var row = 1; row <= qu.recordcount; row++){
-            currentRow = structnew();
+        var cols = listToArray(q.columnlist);
+        for(var row = 1; row <= q.recordcount; row++){
+            row = structnew();
             for(var col = 1; col <= arrayLen(cols); col++){
-                currentRow[cols[col]] = query[cols[col]][row];
+                row[cols[col]] = q[cols[col]][row];
             }
-            arr.append(duplicate(currentRow));
+            arr.append(duplicate(row));
         }
         return(arr);
     }
@@ -97,7 +160,7 @@ component displayName="Barretts Utils" hint="Some useful functions I've made at 
             } else{
                 writeDump(deserializeXML(serializeXML(obj)));
             }
-        catch(any cfcatch){
+        } catch(any cfcatch){
             sendGatewayMessage('errorHandler', cfcatch);
         }
     }
@@ -167,7 +230,7 @@ component displayName="Barretts Utils" hint="Some useful functions I've made at 
             var j = 1;
             for(var key in arrOfStruct[i]){
                 for(var adjustment in keyAdjustments){
-                    if(adjustment EQ key){
+                    if(adjustment == key){
                         key = adjustment;
                     }
                 }
@@ -241,6 +304,7 @@ component displayName="Barretts Utils" hint="Some useful functions I've made at 
         }
         return '';
     }
+
 
     /* Simple struct toString() */
     public string function stringifyStruct(required struct x){
