@@ -12,29 +12,50 @@ component displayName="Barretts Utils" hint="Some useful functions I've made at 
     }
 
 
-    /* Return simple HTML table string from database query results */
-    public string function queryResultAsHtmlTable(required Query q, required struct classes){
-        var outHTML = '';
-        var result = arguments.q.getResult();
-        savecontent variable = 'outHTML'{
-            if(isDefined('result') && result.recordCount > 0){
-                writeOutput('<div class="#arguments.classes.divWrapper#"><table class="#arguments.classes.table#"> 
-                    <thead class="#arguments.classes.thead#"><tr class="#arguments.classes.tr#">');
-                for(var col in result.columnlist){
-                    writeOutput('<th class="#arguments.classes.th#">');
+    /* Convert array of structures to a Query object */
+    public Query function arrOfStructToQuery(required array arr){
+        var q = new Query();
+        if(arrayLen(arr) > 0){
+            var cols = structKeyArray(arr[1]);
+            q = queryNew(arrayToList(cols));
+            queryAddRow(q, arrayLen(arr));
+            for(var s in arr){
+                for(var col in cols){
+                    querySetCell(q, col, s[col], i);
                 }
-                writeOutput('</tr></thead><tbody class="#arguments.classes.tbody#">');
-                for(var row in result){
-                    writeOutput('<tr class="#arguments.classes.tr#">');
-                    for(var val in row){
-                        writeOutput('<td class="#arguments.classes.td#">#val#</td>');
-                    }
-                    writeOutput('</tr>');
-                }
-                writeOutput('</tbody></div>');
-            } else{
-                writeOutput('<p>Table not generated. Query had no results.</p>');
             }
+        }
+        return q;
+    }
+
+
+    /* Return simple HTML table string from database query results */
+    public string function drawQueryTable(required Query q, string title='', array excludeCols=arrayNew(1)){
+        var outHTML = '';
+        savecontent variable = 'outHTML'{
+            var size = arguments.q.recordCount;
+            var cols = getMetadata(arguments.q);
+            writeOutput('<div style="padding:.5em">');
+            if(isDefined('arguments.q') && size > 0){
+                writeOutput('<h3>#arguments.title#</h3><table class="table table-striped"><thead><tr>');
+                for(var col in cols){
+                    if(!arguments.excludeCols.contains(col.name)){
+                        writeOutput('<th class="tableHeader:first-of-type">#col.name#</th>');
+                    }
+                }
+                writeOutput("</tr><thead/>");
+                for(var i = 1; i <= size; i++){
+                    writeOutput("<tbody><tr>");
+                    for(var col in cols){
+                        if(!arguments.excludeCols.contains(col.name)){
+                            writeOutput("<td>#queryGetRow(arguments.q, i)[col.name]#</td>");   
+                        }
+                    }
+                    writeOutput("</tr></tbody>");
+                }
+                writeOutput('</table>');
+            }
+            writeOutput('</div>');
         }
         return outHTML;
     }
@@ -57,18 +78,29 @@ component displayName="Barretts Utils" hint="Some useful functions I've made at 
     }
 
 
+    /* Another function to execute a stored procedure from datasource using array of param structs */
+    public Query function executeStoredProc(required string procName, required string dataSrc, array params=arrayNew(1)){
+        var proc = new storedProc();
+        proc.setProcedure(arguments.procName);
+        proc.setDatasource(arguments.dataSrc);
+        for(var param in arguments.params){
+            proc.addParam(
+                cfsqltype = param.cfsqltype, value = param.value, dbvarname = param.dbvarname
+            );
+        }
+        proc.addProcResult(name="result", resultset=1);
+        return proc.execute().getProcResultSets().result;
+    }
+
+
     /* Execute stored procedure from data source with an array of param structs (More of a reference to syntax than an actual utility) */
-    public void function executeStoredProc(required string procName, required string dataSrc, array params){
+    public any function executeCFStoredProc(required string procName, required string dataSrc, array params=arrayNew(1)){
         var response = '';
-        try{
-            cfstoredproc(procedure="#procName#", datasource="#dataSrc#"){
-                cfprocresult(name="response");
-                for(var param in params){
-                    cfprocparam(cfsqltype="#param.cfsqltype#", value="#param.value#", dbvarname="#param.colName#");
-                }
+        cfstoredproc(procedure="#procName#", datasource="#dataSrc#"){
+            cfprocresult(name="response");
+            for(var param in params){
+                cfprocparam(cfsqltype="#param.cfsqltype#", value="#param.value#", dbvarname="#param.colName#");
             }
-        } catch(any e){
-            errorHandler(e);
         }
         return response;
     }
@@ -100,7 +132,7 @@ component displayName="Barretts Utils" hint="Some useful functions I've made at 
 
 
     /* Return query as an array of structs */
-    public struct function queryToArrOfStructs(required Query q){
+    public struct function queryToArrOfStruct(required Query q){
         var arr = arrayNew(1);
         var cols = listToArray(q.columnlist);
         for(var row = 1; row <= q.recordcount; row++){
@@ -218,9 +250,9 @@ component displayName="Barretts Utils" hint="Some useful functions I've made at 
 
 
     /*  Creates an xml doc with an array of structs converted to a single xml node with children
-        arrayOfStructsToXml(arrOfStruct, 'response', 'vehicles', vehicle', {'_id': 'ID', 'config': 'style'}); 
+        arrOfStructToXml(arrOfStruct, 'response', 'vehicles', vehicle', {'_id': 'ID', 'config': 'style'}); 
     */
-    public any function arrayOfStructsToXml(arrOfStruct, docName, nodeName, childName, keyAdjustments = {}){
+    public any function arrOfStructToXml(arrOfStruct, docName, nodeName, childName, keyAdjustments = {}){
         var myDoc = xmlNew();
         myDoc.xmlRoot = xmlElemNew(myDoc, docName);
         myDoc.docName.XmlChildren[1] = XmlElemNew(myDoc, nodeName);
@@ -295,7 +327,7 @@ component displayName="Barretts Utils" hint="Some useful functions I've made at 
 
 
     /* Search array of structs for a key, only goes one layer deep in the structs */
-    public any function searchArrOfStructs(required array arrOfStruct, required string key){
+    public any function searchArrOfStruct(required array arrOfStruct, required string key){
         local.index = arrayFind(arguments.arrOfStruct.config.specs, function(s){
             return s.key == key;
         });
